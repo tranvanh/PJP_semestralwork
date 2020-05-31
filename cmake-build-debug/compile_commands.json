@@ -1,0 +1,17 @@
+[
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/main.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/main.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/main.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/Lexer.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/Lexer.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/Lexer.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/Parser.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/Parser.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/Parser.cpp"
+}
+]

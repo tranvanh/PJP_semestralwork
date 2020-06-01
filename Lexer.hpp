@@ -5,6 +5,7 @@
 #include <fstream>
 #include <map>
 
+//TODO zkontrolovat s progtest souborem
 
 /*
  * Lexer returns tokens [0-255] if it is an unknown character,

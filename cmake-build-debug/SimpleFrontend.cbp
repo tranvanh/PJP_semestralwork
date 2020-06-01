@@ -92,6 +92,72 @@
 				</MakeCommands>
 			</Target>
 		</Build>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTArray.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTArray.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTBody.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTBody.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTConstVariable.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTConstVariable.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTExpression.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTExpression.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTInteger.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTInteger.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTNumber.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTNumber.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTString.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTString.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariable.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariable.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableDef.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableDef.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableType.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableType.hpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AbstractSyntaxTree.cpp">
+			<Option target="mila"/>
+		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AbstractSyntaxTree.hpp">
+			<Option target="mila"/>
+		</Unit>
 		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/Lexer.cpp">
 			<Option target="mila"/>
 		</Unit>

@@ -136,6 +136,303 @@ intrinsics_gen/fast:
 	$(MAKE) -f CMakeFiles/intrinsics_gen.dir/build.make CMakeFiles/intrinsics_gen.dir/build
 .PHONY : intrinsics_gen/fast
 
+AST/ASTArray.o: AST/ASTArray.cpp.o
+
+.PHONY : AST/ASTArray.o
+
+# target to build an object file
+AST/ASTArray.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTArray.cpp.o
+.PHONY : AST/ASTArray.cpp.o
+
+AST/ASTArray.i: AST/ASTArray.cpp.i
+
+.PHONY : AST/ASTArray.i
+
+# target to preprocess a source file
+AST/ASTArray.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTArray.cpp.i
+.PHONY : AST/ASTArray.cpp.i
+
+AST/ASTArray.s: AST/ASTArray.cpp.s
+
+.PHONY : AST/ASTArray.s
+
+# target to generate assembly for a file
+AST/ASTArray.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTArray.cpp.s
+.PHONY : AST/ASTArray.cpp.s
+
+AST/ASTBody.o: AST/ASTBody.cpp.o
+
+.PHONY : AST/ASTBody.o
+
+# target to build an object file
+AST/ASTBody.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTBody.cpp.o
+.PHONY : AST/ASTBody.cpp.o
+
+AST/ASTBody.i: AST/ASTBody.cpp.i
+
+.PHONY : AST/ASTBody.i
+
+# target to preprocess a source file
+AST/ASTBody.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTBody.cpp.i
+.PHONY : AST/ASTBody.cpp.i
+
+AST/ASTBody.s: AST/ASTBody.cpp.s
+
+.PHONY : AST/ASTBody.s
+
+# target to generate assembly for a file
+AST/ASTBody.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTBody.cpp.s
+.PHONY : AST/ASTBody.cpp.s
+
+AST/ASTConstVariable.o: AST/ASTConstVariable.cpp.o
+
+.PHONY : AST/ASTConstVariable.o
+
+# target to build an object file
+AST/ASTConstVariable.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o
+.PHONY : AST/ASTConstVariable.cpp.o
+
+AST/ASTConstVariable.i: AST/ASTConstVariable.cpp.i
+
+.PHONY : AST/ASTConstVariable.i
+
+# target to preprocess a source file
+AST/ASTConstVariable.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.i
+.PHONY : AST/ASTConstVariable.cpp.i
+
+AST/ASTConstVariable.s: AST/ASTConstVariable.cpp.s
+
+.PHONY : AST/ASTConstVariable.s
+
+# target to generate assembly for a file
+AST/ASTConstVariable.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.s
+.PHONY : AST/ASTConstVariable.cpp.s
+
+AST/ASTExpression.o: AST/ASTExpression.cpp.o
+
+.PHONY : AST/ASTExpression.o
+
+# target to build an object file
+AST/ASTExpression.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTExpression.cpp.o
+.PHONY : AST/ASTExpression.cpp.o
+
+AST/ASTExpression.i: AST/ASTExpression.cpp.i
+
+.PHONY : AST/ASTExpression.i
+
+# target to preprocess a source file
+AST/ASTExpression.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTExpression.cpp.i
+.PHONY : AST/ASTExpression.cpp.i
+
+AST/ASTExpression.s: AST/ASTExpression.cpp.s
+
+.PHONY : AST/ASTExpression.s
+
+# target to generate assembly for a file
+AST/ASTExpression.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTExpression.cpp.s
+.PHONY : AST/ASTExpression.cpp.s
+
+AST/ASTInteger.o: AST/ASTInteger.cpp.o
+
+.PHONY : AST/ASTInteger.o
+
+# target to build an object file
+AST/ASTInteger.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTInteger.cpp.o
+.PHONY : AST/ASTInteger.cpp.o
+
+AST/ASTInteger.i: AST/ASTInteger.cpp.i
+
+.PHONY : AST/ASTInteger.i
+
+# target to preprocess a source file
+AST/ASTInteger.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTInteger.cpp.i
+.PHONY : AST/ASTInteger.cpp.i
+
+AST/ASTInteger.s: AST/ASTInteger.cpp.s
+
+.PHONY : AST/ASTInteger.s
+
+# target to generate assembly for a file
+AST/ASTInteger.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTInteger.cpp.s
+.PHONY : AST/ASTInteger.cpp.s
+
+AST/ASTNumber.o: AST/ASTNumber.cpp.o
+
+.PHONY : AST/ASTNumber.o
+
+# target to build an object file
+AST/ASTNumber.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTNumber.cpp.o
+.PHONY : AST/ASTNumber.cpp.o
+
+AST/ASTNumber.i: AST/ASTNumber.cpp.i
+
+.PHONY : AST/ASTNumber.i
+
+# target to preprocess a source file
+AST/ASTNumber.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTNumber.cpp.i
+.PHONY : AST/ASTNumber.cpp.i
+
+AST/ASTNumber.s: AST/ASTNumber.cpp.s
+
+.PHONY : AST/ASTNumber.s
+
+# target to generate assembly for a file
+AST/ASTNumber.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTNumber.cpp.s
+.PHONY : AST/ASTNumber.cpp.s
+
+AST/ASTString.o: AST/ASTString.cpp.o
+
+.PHONY : AST/ASTString.o
+
+# target to build an object file
+AST/ASTString.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTString.cpp.o
+.PHONY : AST/ASTString.cpp.o
+
+AST/ASTString.i: AST/ASTString.cpp.i
+
+.PHONY : AST/ASTString.i
+
+# target to preprocess a source file
+AST/ASTString.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTString.cpp.i
+.PHONY : AST/ASTString.cpp.i
+
+AST/ASTString.s: AST/ASTString.cpp.s
+
+.PHONY : AST/ASTString.s
+
+# target to generate assembly for a file
+AST/ASTString.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTString.cpp.s
+.PHONY : AST/ASTString.cpp.s
+
+AST/ASTVariable.o: AST/ASTVariable.cpp.o
+
+.PHONY : AST/ASTVariable.o
+
+# target to build an object file
+AST/ASTVariable.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariable.cpp.o
+.PHONY : AST/ASTVariable.cpp.o
+
+AST/ASTVariable.i: AST/ASTVariable.cpp.i
+
+.PHONY : AST/ASTVariable.i
+
+# target to preprocess a source file
+AST/ASTVariable.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariable.cpp.i
+.PHONY : AST/ASTVariable.cpp.i
+
+AST/ASTVariable.s: AST/ASTVariable.cpp.s
+
+.PHONY : AST/ASTVariable.s
+
+# target to generate assembly for a file
+AST/ASTVariable.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariable.cpp.s
+.PHONY : AST/ASTVariable.cpp.s
+
+AST/ASTVariableDef.o: AST/ASTVariableDef.cpp.o
+
+.PHONY : AST/ASTVariableDef.o
+
+# target to build an object file
+AST/ASTVariableDef.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o
+.PHONY : AST/ASTVariableDef.cpp.o
+
+AST/ASTVariableDef.i: AST/ASTVariableDef.cpp.i
+
+.PHONY : AST/ASTVariableDef.i
+
+# target to preprocess a source file
+AST/ASTVariableDef.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.i
+.PHONY : AST/ASTVariableDef.cpp.i
+
+AST/ASTVariableDef.s: AST/ASTVariableDef.cpp.s
+
+.PHONY : AST/ASTVariableDef.s
+
+# target to generate assembly for a file
+AST/ASTVariableDef.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.s
+.PHONY : AST/ASTVariableDef.cpp.s
+
+AST/ASTVariableType.o: AST/ASTVariableType.cpp.o
+
+.PHONY : AST/ASTVariableType.o
+
+# target to build an object file
+AST/ASTVariableType.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o
+.PHONY : AST/ASTVariableType.cpp.o
+
+AST/ASTVariableType.i: AST/ASTVariableType.cpp.i
+
+.PHONY : AST/ASTVariableType.i
+
+# target to preprocess a source file
+AST/ASTVariableType.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableType.cpp.i
+.PHONY : AST/ASTVariableType.cpp.i
+
+AST/ASTVariableType.s: AST/ASTVariableType.cpp.s
+
+.PHONY : AST/ASTVariableType.s
+
+# target to generate assembly for a file
+AST/ASTVariableType.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableType.cpp.s
+.PHONY : AST/ASTVariableType.cpp.s
+
+AbstractSyntaxTree.o: AbstractSyntaxTree.cpp.o
+
+.PHONY : AbstractSyntaxTree.o
+
+# target to build an object file
+AbstractSyntaxTree.cpp.o:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o
+.PHONY : AbstractSyntaxTree.cpp.o
+
+AbstractSyntaxTree.i: AbstractSyntaxTree.cpp.i
+
+.PHONY : AbstractSyntaxTree.i
+
+# target to preprocess a source file
+AbstractSyntaxTree.cpp.i:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.i
+.PHONY : AbstractSyntaxTree.cpp.i
+
+AbstractSyntaxTree.s: AbstractSyntaxTree.cpp.s
+
+.PHONY : AbstractSyntaxTree.s
+
+# target to generate assembly for a file
+AbstractSyntaxTree.cpp.s:
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.s
+.PHONY : AbstractSyntaxTree.cpp.s
+
 Lexer.o: Lexer.cpp.o
 
 .PHONY : Lexer.o
@@ -227,6 +524,39 @@ help:
 	@echo "... edit_cache"
 	@echo "... mila"
 	@echo "... intrinsics_gen"
+	@echo "... AST/ASTArray.o"
+	@echo "... AST/ASTArray.i"
+	@echo "... AST/ASTArray.s"
+	@echo "... AST/ASTBody.o"
+	@echo "... AST/ASTBody.i"
+	@echo "... AST/ASTBody.s"
+	@echo "... AST/ASTConstVariable.o"
+	@echo "... AST/ASTConstVariable.i"
+	@echo "... AST/ASTConstVariable.s"
+	@echo "... AST/ASTExpression.o"
+	@echo "... AST/ASTExpression.i"
+	@echo "... AST/ASTExpression.s"
+	@echo "... AST/ASTInteger.o"
+	@echo "... AST/ASTInteger.i"
+	@echo "... AST/ASTInteger.s"
+	@echo "... AST/ASTNumber.o"
+	@echo "... AST/ASTNumber.i"
+	@echo "... AST/ASTNumber.s"
+	@echo "... AST/ASTString.o"
+	@echo "... AST/ASTString.i"
+	@echo "... AST/ASTString.s"
+	@echo "... AST/ASTVariable.o"
+	@echo "... AST/ASTVariable.i"
+	@echo "... AST/ASTVariable.s"
+	@echo "... AST/ASTVariableDef.o"
+	@echo "... AST/ASTVariableDef.i"
+	@echo "... AST/ASTVariableDef.s"
+	@echo "... AST/ASTVariableType.o"
+	@echo "... AST/ASTVariableType.i"
+	@echo "... AST/ASTVariableType.s"
+	@echo "... AbstractSyntaxTree.o"
+	@echo "... AbstractSyntaxTree.i"
+	@echo "... AbstractSyntaxTree.s"
 	@echo "... Lexer.o"
 	@echo "... Lexer.i"
 	@echo "... Lexer.s"

@@ -3,3 +3,7 @@
 //
 
 #include "ASTArrayReference.hpp"
+
+ASTArrayReference::ASTArrayReference(const std::string &name,
+                                     std::unique_ptr<ASTExpression> index)
+        : ASTReference(name), m_Index(std::move(index)) {}

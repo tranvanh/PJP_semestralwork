@@ -18,7 +18,7 @@ public:
 
     llvm::Value* codegen() override;
 private:
-    Token op;
+    Token m_Op;
     std::unique_ptr<ASTExpression> m_LHS, m_RHS;
 };
 

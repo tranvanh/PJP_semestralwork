@@ -12,7 +12,7 @@
 
 class ASTProgram : public ASTExpression {
 public:
-    ASTProgram(const std::string name,
+    ASTProgram(const std::string &name,
                std::vector<std::unique_ptr<ASTVariableDef>> global,
                std::vector<std::unique_ptr<ASTFunction>> functions,
                std::unique_ptr<ASTBody> main
@@ -22,10 +22,10 @@ public:
 
     std::unique_ptr<llvm::Module> runCodegen(const std::string &output_file);
 
-    const std::string name;
+    const std::string m_Name;
     std::vector<std::unique_ptr<ASTVariableDef>> m_Global;
     std::vector<std::unique_ptr<ASTFunction>> m_Functions;
-    std::unique_ptr<ASTBody> m_Main
+    std::unique_ptr<ASTBody> m_Main;
 };
 
 

@@ -7,7 +7,7 @@
 
 
 #include "ASTVariableType.hpp"
-#include "../literals/ASTNumber.hpp"
+#include "../constants/ASTNumber.hpp"
 
 class ASTArray : public ASTVariableType {
 public:

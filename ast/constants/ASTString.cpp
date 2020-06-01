@@ -3,3 +3,5 @@
 //
 
 #include "ASTString.hpp"
+
+ASTString::ASTString(const std::string &str) : m_Str(str) {}

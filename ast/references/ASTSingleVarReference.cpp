@@ -3,3 +3,5 @@
 //
 
 #include "ASTSingleVarReference.hpp"
+
+ASTSingleVarReference::ASTSingleVarReference(const std::string &name) : ASTReference(name) {}

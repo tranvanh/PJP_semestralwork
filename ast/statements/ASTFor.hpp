@@ -24,7 +24,7 @@ public:
 private:
     const std::string m_VarName;
     std::unique_ptr<ASTExpression> m_Start, m_End, m_Step;
-    std::unique_ptr<ASTBody> body;
+    std::unique_ptr<ASTBody> m_Body;
     bool m_DownTo;
 };
 

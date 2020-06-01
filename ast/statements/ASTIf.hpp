@@ -12,7 +12,7 @@
 class ASTIf : public ASTExpression {
 public:
     ASTIf(std::unique_ptr<ASTExpression> condition,
-          std::unique_ptr<ASTBody> then_bod,
+          std::unique_ptr<ASTBody> then_body,
           std::unique_ptr<ASTBody> else_body);
 
     llvm::Value *codegen() override;

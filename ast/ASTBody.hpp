@@ -13,6 +13,8 @@ public:
     ASTBody(std::vector<std::unique_ptr<ASTExpression>> content);
 
     llvm::Value *codegen();
+
+    std::vector<std::unique_ptr<ASTExpression>> m_Content;
 };
 
 #endif //SIMPLEFRONTEND_ASTBODY_HPP

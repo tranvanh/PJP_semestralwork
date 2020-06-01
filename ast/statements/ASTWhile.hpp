@@ -19,7 +19,7 @@ public:
 
 private:
     std::unique_ptr<ASTExpression> m_Condition;
-    std::unique_ptr<ASTBody> body;
+    std::unique_ptr<ASTBody> m_Body;
 };
 
 

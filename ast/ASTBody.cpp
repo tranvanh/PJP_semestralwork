@@ -3,3 +3,6 @@
 //
 
 #include "ASTBody.hpp"
+
+ASTBody::ASTBody(std::vector<std::unique_ptr<ASTExpression>> content)
+        : m_Content(std::move(content)) {}

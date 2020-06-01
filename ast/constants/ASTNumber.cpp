@@ -3,3 +3,5 @@
 //
 
 #include "ASTNumber.hpp"
+
+ASTNumber::ASTNumber(int val) : m_Value(val){}

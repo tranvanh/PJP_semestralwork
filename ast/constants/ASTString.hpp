@@ -5,7 +5,7 @@
 #ifndef SIMPLEFRONTEND_ASTSTRING_HPP
 #define SIMPLEFRONTEND_ASTSTRING_HPP
 
-#include "ASTExpression.hpp"
+#include "../ASTExpression.hpp"
 
 class ASTString : public ASTExpression {
 public:
@@ -13,7 +13,7 @@ public:
 
     llvm::Value *codegen() override;
 
-    std::string str;
+    std::string m_Str;
 };
 
 #endif //SIMPLEFRONTEND_ASTSTRING_HPP

@@ -11,12 +11,13 @@
 // Const Variable
 class ASTConstVariable : public ASTVariableDef {
 public:
-    ASTConstVariable(const std::string &name, int value);
+    ASTConstVariable(const std::string &name,
+                     int value);
 
     llvm::Value *codegen() override;
 
-    const std::string name;
-    const int value;
+    const std::string m_Name;
+    const int m_Value;
 };
 
 

@@ -7,16 +7,17 @@
 
 
 #include "ASTVariableDef.hpp"
-#include "ASTVariableType.hpp"
+#include "../data_types/ASTVariableType.hpp"
 
 class ASTVariable : public ASTVariableDef {
 public:
-    ASTVariable(const std::string &name, std::shared_ptr<ASTVariableType> type);
+    ASTVariable(const std::string &name,
+                std::shared_ptr<ASTVariableType> type);
 
     llvm::Value *codegen() override;
 
-    const std::string name;
-    std::shared_ptr<ASTVariableType> type;
+    const std::string m_Name;
+    std::shared_ptr<ASTVariableType> m_Type;
 };
 
 #endif //SIMPLEFRONTEND_ASTVARIABLE_HPP

@@ -6,7 +6,7 @@
 #define SIMPLEFRONTEND_ASTNUMBER_HPP
 
 
-#include "ASTExpression.hpp"
+#include "../ASTExpression.hpp"
 
 class ASTNumber : public ASTExpression {
 public:
@@ -14,7 +14,7 @@ public:
 
     llvm::Value *codegen() override;
 
-    int value;
+    int m_Value;
 };
 
 

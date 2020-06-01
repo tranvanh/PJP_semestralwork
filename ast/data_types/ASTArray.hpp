@@ -7,19 +7,20 @@
 
 
 #include "ASTVariableType.hpp"
-#include "ASTNumber.hpp"
+#include "../literals/ASTNumber.hpp"
 
 class ASTArray : public ASTVariableType {
 public:
     ASTArray(std::unique_ptr<ASTNumber> lower,
              std::unique_ptr<ASTNumber> upper,
-             std::shared_ptr<ASTVariableType> type);
+             std::shared_ptr<ASTVariableType> type
+    );
 
     llvm::Type *codegen();
 
-    std::unique_ptr<ASTNumber> lowerIdx, upperIdx;
+    std::unique_ptr<ASTNumber> m_LowerIdx, m_UpperIdx;
 private:
-    std::shared_ptr<ASTVariableType> type;
+    std::shared_ptr<ASTVariableType> m_Type;
 };
 
 

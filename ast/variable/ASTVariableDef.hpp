@@ -6,7 +6,7 @@
 #define SIMPLEFRONTEND_ASTVARIABLEDEF_HPP
 
 
-#include "ASTExpression.hpp"
+#include "../ASTExpression.hpp"
 
 class ASTVariableDef : public ASTExpression {
 public:

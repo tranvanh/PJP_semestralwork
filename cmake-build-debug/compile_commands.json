@@ -16,57 +16,122 @@
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AbstractSyntaxTree.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AbstractSyntaxTree.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/ASTExpression.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTExpression.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTExpression.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTExpression.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTExpression.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTExpression.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTString.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTString.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTString.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTString.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTString.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTNumber.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTNumber.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTNumber.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTNumber.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTNumber.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTVariableType.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTVariableType.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableType.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableType.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTInteger.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTInteger.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTInteger.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTInteger.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTInteger.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTArray.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTArray.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTArray.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTArray.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTArray.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/ASTBody.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTBody.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTBody.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTBody.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTBody.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTBody.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariableDef.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariableDef.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableDef.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableDef.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariable.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariable.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariable.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariable.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTConstVariable.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTConstVariable.cpp"
 },
 {
   "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
-  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTConstVariable.cpp",
-  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTConstVariable.cpp"
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionCall.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionCall.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionPrototype.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionPrototype.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunction.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunction.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTIf.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTIf.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTFor.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTFor.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTWhile.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTWhile.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTBreak.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTBreak.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTExit.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTExit.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTReference.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTReference.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTSingleVarReference.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTSingleVarReference.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTArrayReference.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTArrayReference.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTAssignOperator.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTAssignOperator.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTBinaryOperator.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTBinaryOperator.cpp"
+},
+{
+  "directory": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug",
+  "command": "clang++   -I/usr/local/Cellar/llvm/10.0.0_3/include  -g -isysroot /Applications/Xcode.app/Contents/Developer/Platforms/MacOSX.platform/Developer/SDKs/MacOSX10.15.sdk -mmacosx-version-min=10.14   -D__STDC_CONSTANT_MACROS -D__STDC_FORMAT_MACROS -D__STDC_LIMIT_MACROS -std=gnu++14 -o CMakeFiles/mila.dir/ast/ASTProgram.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTProgram.cpp",
+  "file": "/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTProgram.cpp"
 }
 ]

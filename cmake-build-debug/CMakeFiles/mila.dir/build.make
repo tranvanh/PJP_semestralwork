@@ -129,268 +129,580 @@ CMakeFiles/mila.dir/Parser.cpp.o.provides: CMakeFiles/mila.dir/Parser.cpp.o.requ
 CMakeFiles/mila.dir/Parser.cpp.o.provides.build: CMakeFiles/mila.dir/Parser.cpp.o
 
 
-CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o: ../AbstractSyntaxTree.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AbstractSyntaxTree.cpp
+CMakeFiles/mila.dir/ast/ASTExpression.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/ASTExpression.cpp.o: ../ast/ASTExpression.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_4) "Building CXX object CMakeFiles/mila.dir/ast/ASTExpression.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/ASTExpression.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTExpression.cpp
 
-CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AbstractSyntaxTree.cpp > CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.i
+CMakeFiles/mila.dir/ast/ASTExpression.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/ASTExpression.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTExpression.cpp > CMakeFiles/mila.dir/ast/ASTExpression.cpp.i
 
-CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AbstractSyntaxTree.cpp -o CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.s
+CMakeFiles/mila.dir/ast/ASTExpression.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/ASTExpression.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTExpression.cpp -o CMakeFiles/mila.dir/ast/ASTExpression.cpp.s
 
-CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.requires:
+CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.requires
 
-CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.provides: CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.provides
+CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.provides: CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.provides
 
-CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.provides.build: CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o
+CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.provides.build: CMakeFiles/mila.dir/ast/ASTExpression.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTExpression.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTExpression.cpp.o: ../AST/ASTExpression.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mila.dir/AST/ASTExpression.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTExpression.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTExpression.cpp
+CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o: ../ast/constants/ASTString.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_5) "Building CXX object CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTString.cpp
 
-CMakeFiles/mila.dir/AST/ASTExpression.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTExpression.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTExpression.cpp > CMakeFiles/mila.dir/AST/ASTExpression.cpp.i
+CMakeFiles/mila.dir/ast/constants/ASTString.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/constants/ASTString.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTString.cpp > CMakeFiles/mila.dir/ast/constants/ASTString.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTExpression.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTExpression.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTExpression.cpp -o CMakeFiles/mila.dir/AST/ASTExpression.cpp.s
+CMakeFiles/mila.dir/ast/constants/ASTString.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/constants/ASTString.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTString.cpp -o CMakeFiles/mila.dir/ast/constants/ASTString.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.requires:
+CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.provides
+CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.provides: CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTExpression.cpp.o
+CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.provides.build: CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTString.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTString.cpp.o: ../AST/ASTString.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mila.dir/AST/ASTString.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTString.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTString.cpp
+CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o: ../ast/constants/ASTNumber.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_6) "Building CXX object CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTNumber.cpp
 
-CMakeFiles/mila.dir/AST/ASTString.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTString.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTString.cpp > CMakeFiles/mila.dir/AST/ASTString.cpp.i
+CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTNumber.cpp > CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTString.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTString.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTString.cpp -o CMakeFiles/mila.dir/AST/ASTString.cpp.s
+CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/constants/ASTNumber.cpp -o CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTString.cpp.o.requires:
+CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTString.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTString.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTString.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTString.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTString.cpp.o.provides
+CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.provides: CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTString.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTString.cpp.o
+CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.provides.build: CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTNumber.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTNumber.cpp.o: ../AST/ASTNumber.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mila.dir/AST/ASTNumber.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTNumber.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTNumber.cpp
+CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o: ../ast/data_types/ASTVariableType.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_7) "Building CXX object CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTVariableType.cpp
 
-CMakeFiles/mila.dir/AST/ASTNumber.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTNumber.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTNumber.cpp > CMakeFiles/mila.dir/AST/ASTNumber.cpp.i
+CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTVariableType.cpp > CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTNumber.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTNumber.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTNumber.cpp -o CMakeFiles/mila.dir/AST/ASTNumber.cpp.s
+CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTVariableType.cpp -o CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.requires:
+CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.provides
+CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.provides: CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTNumber.cpp.o
+CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.provides.build: CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o: ../AST/ASTVariableType.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableType.cpp
+CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o: ../ast/data_types/ASTInteger.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_8) "Building CXX object CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTInteger.cpp
 
-CMakeFiles/mila.dir/AST/ASTVariableType.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTVariableType.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableType.cpp > CMakeFiles/mila.dir/AST/ASTVariableType.cpp.i
+CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTInteger.cpp > CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTVariableType.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTVariableType.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableType.cpp -o CMakeFiles/mila.dir/AST/ASTVariableType.cpp.s
+CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTInteger.cpp -o CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.requires:
+CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.provides
+CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.provides: CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o
+CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.provides.build: CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTInteger.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTInteger.cpp.o: ../AST/ASTInteger.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mila.dir/AST/ASTInteger.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTInteger.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTInteger.cpp
+CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o: ../ast/data_types/ASTArray.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_9) "Building CXX object CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTArray.cpp
 
-CMakeFiles/mila.dir/AST/ASTInteger.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTInteger.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTInteger.cpp > CMakeFiles/mila.dir/AST/ASTInteger.cpp.i
+CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTArray.cpp > CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTInteger.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTInteger.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTInteger.cpp -o CMakeFiles/mila.dir/AST/ASTInteger.cpp.s
+CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/data_types/ASTArray.cpp -o CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.requires:
+CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.provides
+CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.provides: CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTInteger.cpp.o
+CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.provides.build: CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTArray.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTArray.cpp.o: ../AST/ASTArray.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mila.dir/AST/ASTArray.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTArray.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTArray.cpp
+CMakeFiles/mila.dir/ast/ASTBody.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/ASTBody.cpp.o: ../ast/ASTBody.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_10) "Building CXX object CMakeFiles/mila.dir/ast/ASTBody.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/ASTBody.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTBody.cpp
 
-CMakeFiles/mila.dir/AST/ASTArray.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTArray.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTArray.cpp > CMakeFiles/mila.dir/AST/ASTArray.cpp.i
+CMakeFiles/mila.dir/ast/ASTBody.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/ASTBody.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTBody.cpp > CMakeFiles/mila.dir/ast/ASTBody.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTArray.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTArray.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTArray.cpp -o CMakeFiles/mila.dir/AST/ASTArray.cpp.s
+CMakeFiles/mila.dir/ast/ASTBody.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/ASTBody.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTBody.cpp -o CMakeFiles/mila.dir/ast/ASTBody.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTArray.cpp.o.requires:
+CMakeFiles/mila.dir/ast/ASTBody.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTArray.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/ASTBody.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTArray.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTArray.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTArray.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTArray.cpp.o.provides
+CMakeFiles/mila.dir/ast/ASTBody.cpp.o.provides: CMakeFiles/mila.dir/ast/ASTBody.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/ASTBody.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/ASTBody.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTArray.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTArray.cpp.o
+CMakeFiles/mila.dir/ast/ASTBody.cpp.o.provides.build: CMakeFiles/mila.dir/ast/ASTBody.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTBody.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTBody.cpp.o: ../AST/ASTBody.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mila.dir/AST/ASTBody.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTBody.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTBody.cpp
+CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o: ../ast/variable/ASTVariableDef.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_11) "Building CXX object CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariableDef.cpp
 
-CMakeFiles/mila.dir/AST/ASTBody.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTBody.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTBody.cpp > CMakeFiles/mila.dir/AST/ASTBody.cpp.i
+CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariableDef.cpp > CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTBody.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTBody.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTBody.cpp -o CMakeFiles/mila.dir/AST/ASTBody.cpp.s
+CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariableDef.cpp -o CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTBody.cpp.o.requires:
+CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTBody.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTBody.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTBody.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTBody.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTBody.cpp.o.provides
+CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.provides: CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTBody.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTBody.cpp.o
+CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.provides.build: CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o: ../AST/ASTVariableDef.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableDef.cpp
+CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o: ../ast/variable/ASTVariable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_12) "Building CXX object CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariable.cpp
 
-CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableDef.cpp > CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.i
+CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariable.cpp > CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariableDef.cpp -o CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.s
+CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariable.cpp -o CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.requires:
+CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.provides
+CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.provides: CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o
+CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.provides.build: CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTVariable.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTVariable.cpp.o: ../AST/ASTVariable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mila.dir/AST/ASTVariable.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariable.cpp
+CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o: ../ast/variable/ASTConstVariable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_13) "Building CXX object CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTConstVariable.cpp
 
-CMakeFiles/mila.dir/AST/ASTVariable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTVariable.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariable.cpp > CMakeFiles/mila.dir/AST/ASTVariable.cpp.i
+CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTConstVariable.cpp > CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTVariable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTVariable.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTVariable.cpp -o CMakeFiles/mila.dir/AST/ASTVariable.cpp.s
+CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTConstVariable.cpp -o CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.requires:
+CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.provides
+CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.provides: CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTVariable.cpp.o
+CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.provides.build: CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o
 
 
-CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o: CMakeFiles/mila.dir/flags.make
-CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o: ../AST/ASTConstVariable.cpp
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o"
-	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTConstVariable.cpp
+CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o: ../ast/function/ASTFunctionCall.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_14) "Building CXX object CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionCall.cpp
 
-CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.i: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.i"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTConstVariable.cpp > CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.i
+CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionCall.cpp > CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.i
 
-CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.s: cmake_force
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.s"
-	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/AST/ASTConstVariable.cpp -o CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.s
+CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionCall.cpp -o CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.s
 
-CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.requires:
+CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.requires:
 
-.PHONY : CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.requires
+.PHONY : CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.requires
 
-CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.provides: CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.requires
-	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.provides.build
-.PHONY : CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.provides
+CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.provides: CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.provides
 
-CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.provides.build: CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o
+CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.provides.build: CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o
+
+
+CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o: ../ast/function/ASTFunctionPrototype.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Building CXX object CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionPrototype.cpp
+
+CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionPrototype.cpp > CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.i
+
+CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunctionPrototype.cpp -o CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.s
+
+CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.provides: CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.provides.build: CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o
+
+
+CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o: ../ast/function/ASTFunction.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_16) "Building CXX object CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunction.cpp
+
+CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunction.cpp > CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.i
+
+CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/function/ASTFunction.cpp -o CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.s
+
+CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.provides: CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.provides.build: CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o
+
+
+CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o: ../ast/statements/ASTIf.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_17) "Building CXX object CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTIf.cpp
+
+CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTIf.cpp > CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.i
+
+CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTIf.cpp -o CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.s
+
+CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.provides: CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.provides.build: CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o
+
+
+CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o: ../ast/statements/ASTFor.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_18) "Building CXX object CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTFor.cpp
+
+CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTFor.cpp > CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.i
+
+CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTFor.cpp -o CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.s
+
+CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.provides: CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.provides.build: CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o
+
+
+CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o: ../ast/statements/ASTWhile.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_19) "Building CXX object CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTWhile.cpp
+
+CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTWhile.cpp > CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.i
+
+CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTWhile.cpp -o CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.s
+
+CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.provides: CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.provides.build: CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o
+
+
+CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o: ../ast/statements/ASTBreak.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_20) "Building CXX object CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTBreak.cpp
+
+CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTBreak.cpp > CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.i
+
+CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTBreak.cpp -o CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.s
+
+CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.provides: CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.provides.build: CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o
+
+
+CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o: ../ast/statements/ASTExit.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_21) "Building CXX object CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTExit.cpp
+
+CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTExit.cpp > CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.i
+
+CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/statements/ASTExit.cpp -o CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.s
+
+CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.provides: CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.provides.build: CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o
+
+
+CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o: ../ast/references/ASTReference.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_22) "Building CXX object CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTReference.cpp
+
+CMakeFiles/mila.dir/ast/references/ASTReference.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/references/ASTReference.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTReference.cpp > CMakeFiles/mila.dir/ast/references/ASTReference.cpp.i
+
+CMakeFiles/mila.dir/ast/references/ASTReference.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/references/ASTReference.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTReference.cpp -o CMakeFiles/mila.dir/ast/references/ASTReference.cpp.s
+
+CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.provides: CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.provides.build: CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o
+
+
+CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o: ../ast/references/ASTSingleVarReference.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_23) "Building CXX object CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTSingleVarReference.cpp
+
+CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTSingleVarReference.cpp > CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.i
+
+CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTSingleVarReference.cpp -o CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.s
+
+CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.provides: CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.provides.build: CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o
+
+
+CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o: ../ast/references/ASTArrayReference.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_24) "Building CXX object CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTArrayReference.cpp
+
+CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTArrayReference.cpp > CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.i
+
+CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/references/ASTArrayReference.cpp -o CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.s
+
+CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.provides: CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.provides.build: CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o
+
+
+CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o: ../ast/operators/ASTAssignOperator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_25) "Building CXX object CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTAssignOperator.cpp
+
+CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTAssignOperator.cpp > CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.i
+
+CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTAssignOperator.cpp -o CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.s
+
+CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.provides: CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.provides.build: CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o
+
+
+CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o: ../ast/operators/ASTBinaryOperator.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_26) "Building CXX object CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTBinaryOperator.cpp
+
+CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTBinaryOperator.cpp > CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.i
+
+CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/operators/ASTBinaryOperator.cpp -o CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.s
+
+CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.provides: CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.provides.build: CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o
+
+
+CMakeFiles/mila.dir/ast/ASTProgram.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/ast/ASTProgram.cpp.o: ../ast/ASTProgram.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_27) "Building CXX object CMakeFiles/mila.dir/ast/ASTProgram.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/ast/ASTProgram.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTProgram.cpp
+
+CMakeFiles/mila.dir/ast/ASTProgram.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/ast/ASTProgram.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTProgram.cpp > CMakeFiles/mila.dir/ast/ASTProgram.cpp.i
+
+CMakeFiles/mila.dir/ast/ASTProgram.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/ast/ASTProgram.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/ASTProgram.cpp -o CMakeFiles/mila.dir/ast/ASTProgram.cpp.s
+
+CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.requires
+
+CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.provides: CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.provides
+
+CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.provides.build: CMakeFiles/mila.dir/ast/ASTProgram.cpp.o
 
 
 # Object files for target mila
@@ -398,17 +710,30 @@ mila_OBJECTS = \
 "CMakeFiles/mila.dir/main.cpp.o" \
 "CMakeFiles/mila.dir/Lexer.cpp.o" \
 "CMakeFiles/mila.dir/Parser.cpp.o" \
-"CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTExpression.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTString.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTNumber.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTInteger.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTArray.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTBody.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTVariable.cpp.o" \
-"CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o"
+"CMakeFiles/mila.dir/ast/ASTExpression.cpp.o" \
+"CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o" \
+"CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o" \
+"CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o" \
+"CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o" \
+"CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o" \
+"CMakeFiles/mila.dir/ast/ASTBody.cpp.o" \
+"CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o" \
+"CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o" \
+"CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o" \
+"CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o" \
+"CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o" \
+"CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o" \
+"CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o" \
+"CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o" \
+"CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o" \
+"CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o" \
+"CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o" \
+"CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o" \
+"CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o" \
+"CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o" \
+"CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o" \
+"CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o" \
+"CMakeFiles/mila.dir/ast/ASTProgram.cpp.o"
 
 # External object files for target mila
 mila_EXTERNAL_OBJECTS =
@@ -416,17 +741,30 @@ mila_EXTERNAL_OBJECTS =
 mila: CMakeFiles/mila.dir/main.cpp.o
 mila: CMakeFiles/mila.dir/Lexer.cpp.o
 mila: CMakeFiles/mila.dir/Parser.cpp.o
-mila: CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTExpression.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTString.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTNumber.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTInteger.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTArray.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTBody.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTVariable.cpp.o
-mila: CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o
+mila: CMakeFiles/mila.dir/ast/ASTExpression.cpp.o
+mila: CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o
+mila: CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o
+mila: CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o
+mila: CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o
+mila: CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o
+mila: CMakeFiles/mila.dir/ast/ASTBody.cpp.o
+mila: CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o
+mila: CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o
+mila: CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o
+mila: CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o
+mila: CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o
+mila: CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o
+mila: CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o
+mila: CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o
+mila: CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o
+mila: CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o
+mila: CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o
+mila: CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o
+mila: CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o
+mila: CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o
+mila: CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o
+mila: CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o
+mila: CMakeFiles/mila.dir/ast/ASTProgram.cpp.o
 mila: CMakeFiles/mila.dir/build.make
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMSupport.a
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMCore.a
@@ -440,7 +778,7 @@ mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMBitstreamReader.a
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMSupport.a
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMDemangle.a
 mila: CMakeFiles/mila.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_15) "Linking CXX executable mila"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable mila"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mila.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -451,17 +789,30 @@ CMakeFiles/mila.dir/build: mila
 CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/main.cpp.o.requires
 CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/Lexer.cpp.o.requires
 CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/Parser.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AbstractSyntaxTree.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTExpression.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTString.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTNumber.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTVariableType.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTInteger.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTArray.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTBody.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTVariableDef.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTVariable.cpp.o.requires
-CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/AST/ASTConstVariable.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/ASTExpression.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/constants/ASTString.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/constants/ASTNumber.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/data_types/ASTVariableType.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/data_types/ASTInteger.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/data_types/ASTArray.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/ASTBody.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/variable/ASTVariable.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/variable/ASTConstVariable.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/function/ASTFunctionCall.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/function/ASTFunctionPrototype.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/function/ASTFunction.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/statements/ASTIf.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/statements/ASTFor.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/statements/ASTWhile.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/statements/ASTBreak.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/statements/ASTExit.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/references/ASTReference.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/references/ASTSingleVarReference.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.requires
 
 .PHONY : CMakeFiles/mila.dir/requires
 

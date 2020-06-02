@@ -73,6 +73,7 @@ public:
     std::vector<std::unique_ptr<ASTConstVariable>> parseConstVarDeclaration();
 
     // Functions/statements
+    std::unique_ptr<ASTExpression> parseFunctionCall(const std::string &iname);
 
     std::unique_ptr<ASTExpression> parseContentLine();
 

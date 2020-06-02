@@ -1,4 +1,5 @@
 #include "Parser.hpp"
+#include "ast/references/ASTSingleVarReference.hpp"
 
 Parser::Parser()
         : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext) {}
@@ -24,9 +25,8 @@ Parser::Parser(const std::string &file_name)
     m_precedence_table[Token::tok_and] = 40;
 }
 
-static std::string tokenToStr( Token tok )
-{
-    switch ( tok ) {
+static std::string tokenToStr(Token tok) {
+    switch (tok) {
         case tok_identifier :
             return "identifier";
         case tok_number :
@@ -137,8 +137,9 @@ static std::string tokenToStr( Token tok )
             return "UNDEFINED TOKEN";
     }
 }
+
 bool Parser::validateToken(Token tok) {
-    if(m_CurrTok == tok)
+    if (m_CurrTok == tok)
         return true;
 
     throw "Expect: '" + tokenToStr(tok) + "'. Received: '" + tokenToStr(m_CurrTok) + "'.";
@@ -192,6 +193,77 @@ Token Parser::getNextToken() {
     return m_CurrTok = m_Lexer.getToken();
 }
 
-std::unique_ptr<ASTExpression> Parser::parseParenthesisExpr() {
-    return std::unique_ptr<ASTExpression>();
+std::unique_ptr<ASTExpression> Parser::parseIdentifierExpr() {
+    validateToken(tok_identifier);
+    std::string identifier_str = m_Lexer.identifierStr();
+    getNextToken();
+
+    if (m_CurrTok == tok_leftParenthesis)
+        return parseFunctionCall(identifier_str);
+    if (m_CurrTok == tok_leftBracket)
+        return parseArrayReference(identifier_str);
+
+    auto var_ref = std::make_unique<ASTSingleVarReference>(identifier_str);
+    if (m_CurrTok == tok_assign)
+        return parseAssign(std::move(var_ref));
+
+    return std::move(var_ref);
+
 }
+
+std::unique_ptr<ASTNumber> Parser::parseNumberExpr() {
+    int sign = 1;
+    if (m_CurrTok == tok_minus) {
+        sign = -1;
+        getNextToken();
+    }
+
+    validateToken(tok_number);
+    getNextToken();
+
+    return std::make_unique<ASTNumber>(sign * m_Lexer.numVal());
+}
+
+std::unique_ptr<ASTString> Parser::parseStringExpr() {
+    validateToken(tok_string);
+    getNextToken();
+    return std::make_unique<ASTString>(m_Lexer.strVal());
+}
+
+std::unique_ptr<ASTExpression> Parser::parseParenthesisExpr() {
+
+    validateToken(tok_leftParenthesis);
+    getNextToken();
+
+    auto res = parseExpression();
+
+    validateToken(tok_rightParenthesis);
+    getNextToken();
+
+    return std::move(res);
+}
+
+std::unique_ptr<ASTExpression> Parser::parsePrimaryExpr() {
+    switch (m_CurrTok) {
+        case tok_identifier:
+            return parseIdentifierExpr();
+        case tok_number:
+            return parseNumberExpr();
+        case tok_minus:
+            return parseNumberExpr();
+        case tok_string:
+            return parseStringExpr();
+        case tok_leftParenthesis:
+            return parseParenthesisExpr();
+        default:
+            throw ("Primary expression beginning with unexpected token");
+    }
+}
+
+std::unique_ptr<ASTExpression> Parser::parseExpression() {
+    auto LHS = parsePrimaryExpr();
+    if (!LHS)
+        return nullptr;
+    return parseBinaryOperatorRHS(1, std::move(LHS));
+}
+

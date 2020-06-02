@@ -76,19 +76,17 @@ public:
     // Functions/statements
     std::unique_ptr<ASTExpression> parseFunctionCall(const std::string &name);
 
-    std::unique_ptr<ASTExpression> parseContentLine();
-
     std::unique_ptr<ASTBody> parseBody();
 
     std::unique_ptr<ASTFunctionPrototype> parseFunctionPrototype();
 
     std::unique_ptr<ASTFunction> parseFunction();
 
-    std::unique_ptr<ASTIf> parseIfExpr();
+    std::unique_ptr<ASTIf> parseIfStmt();
 
-    std::unique_ptr<ASTFor> parseFprExr();
+    std::unique_ptr<ASTFor> parseForStmt();
 
-    std::unique_ptr<ASTWhile> parseWhileExpr();
+    std::unique_ptr<ASTWhile> parseWhileStmt();
 
     std::unique_ptr<ASTBreak> parseBreak();
 

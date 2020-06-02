@@ -291,3 +291,76 @@ std::unique_ptr<ASTExpression> Parser::parseExpression() {
     return parseBinaryOperatorRHS(1, std::move(LHS));
 }
 
+//statements
+
+std::unique_ptr<ASTBody> Parser::parseBody() {
+
+    std::vector<std::unique_ptr<ASTExpression>> content;
+    if (m_CurrTok == tok_begin) {
+        getNextToken();
+
+        while (m_CurrTok != tok_end && m_CurrTok != tok_eof) {
+            content.emplace_back(parseStatement());
+            while (m_CurrTok == tok_semicolon) {
+                getNextToken();
+                if (m_CurrTok == tok_end)
+                    break;
+                content.emplace_back(parseStatement());
+            }
+        }
+        validateToken(tok_end);
+        getNextToken();
+    } else {
+        content.emplace_back(parseStatement());
+    }
+    return std::make_unique<ASTBody>(std::move(content));
+}
+
+std::unique_ptr<ASTIf> Parser::parseIfStmt() {
+    validateToken(tok_if);
+
+    getNextToken();
+
+    auto condition = parseExpression();
+
+    validateToken(tok_then);
+    getNextToken();
+
+    auto then_body = parseBody();
+
+    if (m_CurrTok == tok_else) {
+        getNextToken();
+        auto else_body = parseBody();
+        return std::make_unique<ASTIf>(std::move(condition), std::move(then_body), std::move(else_body));
+    }
+    return std::make_unique<ASTIf>(std::move(condition), std::move(then_body), nullptr);
+
+}
+
+
+std::unique_ptr<ASTExit> Parser::parseExit() {
+    return std::make_unique<ASTExit>();
+}
+
+std::unique_ptr<ASTBreak> Parser::parseBreak() {
+    return std::make_unique<ASTBreak>();
+}
+
+
+std::unique_ptr<ASTExpression> Parser::parseStatement() {
+    switch (m_CurrTok) {
+        case tok_identifier:
+            return parseIdentifierExpr();
+        case tok_if:
+            return parseIfStmt();
+        case tok_while:
+            return parseWhileStmt();
+        case tok_for:
+            return parseForStmt();
+        case tok_break:
+            return parseBreak();
+        case tok_exit:
+            return parseExit();
+    }
+}
+

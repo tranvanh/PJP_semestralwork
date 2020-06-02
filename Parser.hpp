@@ -31,6 +31,7 @@
 #include "ast/statements/ASTExit.hpp"
 #include "ast/references/ASTArrayReference.hpp"
 #include "ast/operators/ASTAssignOperator.hpp"
+#include "ast/function/ASTFunctionCall.hpp"
 
 using namespace llvm;
 
@@ -73,7 +74,7 @@ public:
     std::vector<std::unique_ptr<ASTConstVariable>> parseConstVarDeclaration();
 
     // Functions/statements
-    std::unique_ptr<ASTExpression> parseFunctionCall(const std::string &iname);
+    std::unique_ptr<ASTExpression> parseFunctionCall(const std::string &name);
 
     std::unique_ptr<ASTExpression> parseContentLine();
 

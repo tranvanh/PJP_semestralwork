@@ -193,6 +193,30 @@ Token Parser::getNextToken() {
     return m_CurrTok = m_Lexer.getToken();
 }
 
+
+std::unique_ptr<ASTExpression> Parser::parseFunctionCall(const std::string &name) {
+
+    std::vector<std::unique_ptr<ASTExpression>> args;
+    getNextToken();
+
+    while (m_CurrTok != tok_rightParenthesis) {
+        auto argument = parseExpression();
+        if (argument)
+            args.push_back(std::move(argument));
+        else
+            return nullptr;
+
+        if (m_CurrTok == tok_rightParenthesis)
+            break;
+
+        validateToken(tok_comma);
+        getNextToken();
+    }
+
+    getNextToken();
+    return std::make_unique<ASTFunctionCall>(name, std::move(args));
+}
+
 std::unique_ptr<ASTExpression> Parser::parseIdentifierExpr() {
     validateToken(tok_identifier);
     std::string identifier_str = m_Lexer.identifierStr();

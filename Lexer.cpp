@@ -11,7 +11,7 @@ Lexer::Lexer(const std::string &input_file) {
     is.clear();
 }
 
-int Lexer::getToken() {
+Token Lexer::getToken() {
 
     static int current_char = ' ';
 

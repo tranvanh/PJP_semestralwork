@@ -83,7 +83,12 @@ enum Token {
     tok_dot = -49,
     tok_colon = -50,
 
-    tok_error = -51
+    tok_error = -51,
+    tok_array = -52,
+    tok_of = -53,
+    tok_break = -54,
+    tok_write = -55,
+    tok_read = -56
 };
 
 
@@ -95,7 +100,7 @@ public:
 
     ~Lexer() = default;
 
-    int getToken();
+    Token getToken();
 
     const std::string &identifierStr() const { return this->m_IdentifierStr; }
 
@@ -109,22 +114,22 @@ private:
     int m_NumVal;                // tok_number
     std::string m_StrVal;
     std::map<std::string, Token> key_words{
-            {"begin", tok_begin},
-            {"end", tok_end},
-            {"const", tok_const},
+            {"begin",     tok_begin},
+            {"end",       tok_end},
+            {"const",     tok_const},
             {"procedure", tok_procedure},
-            {"forward", tok_forward},
-            {"function", tok_function},
-            {"if", tok_if},
-            {"then", tok_then},
-            {"else", tok_else},
-            {"program", tok_program},
-            {"while", tok_while},
-            {"exit", tok_exit},
-            {"var", tok_var},
-            {"integer", tok_integer},
-            {"for", tok_for},
-            {"do", tok_do}
+            {"forward",   tok_forward},
+            {"function",  tok_function},
+            {"if",        tok_if},
+            {"then",      tok_then},
+            {"else",      tok_else},
+            {"program",   tok_program},
+            {"while",     tok_while},
+            {"exit",      tok_exit},
+            {"var",       tok_var},
+            {"integer",   tok_integer},
+            {"for",       tok_for},
+            {"do",        tok_do}
     };
 };
 

@@ -24,11 +24,124 @@ Parser::Parser(const std::string &file_name)
     m_precedence_table[Token::tok_and] = 40;
 }
 
-bool Parser::validateToken(Token correct) {
-    if(m_CurrTok == correct)
+static std::string tokenToStr( Token tok )
+{
+    switch ( tok ) {
+        case tok_identifier :
+            return "identifier";
+        case tok_number :
+            return "number";
+        case tok_eof :
+            return "EOF";
+        case tok_error :
+            return "ERROR";
+        case tok_string :
+            return "string";
+
+
+        case tok_plus :
+            return "+";
+        case tok_minus :
+            return "-";
+        case tok_multiply :
+            return "*";
+        case tok_equal :
+            return "=";
+        case tok_notEqual :
+            return "<>";
+        case tok_less :
+            return "<";
+        case tok_lessEqual :
+            return "<=";
+        case tok_greater :
+            return ">";
+        case tok_greaterEqual :
+            return ">=";
+        case tok_leftParenthesis :
+            return "(";
+        case tok_rightParenthesis :
+            return ")";
+        case tok_leftBracket :
+            return "[";
+        case tok_rightBracket :
+            return "]";
+        case tok_assign :
+            return ":=";
+        case tok_comma :
+            return ",";
+        case tok_semicolon :
+            return ";";
+        case tok_dot :
+            return ".";
+        case tok_colon :
+            return ":";
+
+        case tok_program :
+            return "program";
+        case tok_const :
+            return "const";
+        case tok_var :
+            return "var";
+        case tok_begin :
+            return "begin";
+        case tok_end :
+            return "end";
+        case tok_div :
+            return "DIV";
+        case tok_mod :
+            return "MOD";
+        case tok_integer :
+            return "integer";
+        case tok_array :
+            return "array";
+        case tok_of :
+            return "of";
+        case tok_if :
+            return "if";
+        case tok_then :
+            return "then";
+        case tok_else :
+            return "else";
+        case tok_while :
+            return "while";
+        case tok_do :
+            return "dow";
+        case tok_for :
+            return "for";
+        case tok_to :
+            return "to";
+        case tok_downto :
+            return "downto";
+        case tok_or :
+            return "or";
+        case tok_and :
+            return "and";
+
+        case tok_procedure :
+            return "procedure";
+        case tok_function :
+            return "function";
+        case tok_forward :
+            return "forward";
+        case tok_break :
+            return "break";
+        case tok_exit :
+            return "exit";
+
+        case tok_write :
+            return "writeln";
+        case tok_read :
+            return "readln";
+
+        default:
+            return "UNDEFINED TOKEN";
+    }
+}
+bool Parser::validateToken(Token tok) {
+    if(m_CurrTok == tok)
         return true;
 
-    throw "Expect: '" + tokenToStr(correct) + "'. Received: '" + tokenToStr(m_CurrTok) + "'.";
+    throw "Expect: '" + tokenToStr(tok) + "'. Received: '" + tokenToStr(m_CurrTok) + "'.";
 }
 
 bool Parser::Parse() {
@@ -75,7 +188,7 @@ const Module &Parser::Generate() {
  * Every function in the parser will assume that CurTok is the cureent token that needs to be parsed
  */
 
-int Parser::getNextToken() {
+Token Parser::getNextToken() {
     return m_CurrTok = m_Lexer.getToken();
 }
 

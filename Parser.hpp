@@ -100,11 +100,11 @@ public:
 
 
 private:
-    int getNextToken();
-    bool validateToken(Token correct);
+    Token getNextToken();
+    bool validateToken(Token tok);
 
     Lexer m_Lexer;            // lexer is used to read tokens
-    int m_CurrTok;               // to keep the current token
+    Token m_CurrTok;               // to keep the current token
 
     LLVMContext MilaContext;   // llvm context
     IRBuilder<> MilaBuilder;   // llvm builder

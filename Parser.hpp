@@ -15,26 +15,102 @@
 #include "llvm/IR/Module.h"
 #include "llvm/IR/Type.h"
 #include "llvm/IR/Verifier.h"
+#include "ast/ASTExpression.hpp"
+#include "ast/constants/ASTNumber.hpp"
+#include "ast/constants/ASTString.hpp"
+#include "ast/data_types/ASTVariableType.hpp"
+#include "ast/variable/ASTVariable.hpp"
+#include "ast/variable/ASTConstVariable.hpp"
+#include "ast/ASTBody.hpp"
+#include "ast/function/ASTFunctionPrototype.hpp"
+#include "ast/function/ASTFunction.hpp"
+#include "ast/statements/ASTIf.hpp"
+#include "ast/statements/ASTFor.hpp"
+#include "ast/statements/ASTWhile.hpp"
+#include "ast/statements/ASTBreak.hpp"
+#include "ast/statements/ASTExit.hpp"
+#include "ast/references/ASTArrayReference.hpp"
+#include "ast/operators/ASTAssignOperator.hpp"
 
 using namespace llvm;
 
 class Parser {
 public:
     Parser();
+
+    Parser(const std::string &file_name);
+
     ~Parser() = default;
 
     bool Parse();             // parse
-    const Module& Generate(); // generate
+    const Module &Generate(); // generate
+
+
+    std::unique_ptr<ASTExpression> parseExpression();
+
+    std::unique_ptr<ASTExpression> parseStatement();
+
+    //constants
+    std::unique_ptr<ASTNumber> parseNumberExpr();
+
+    std::unique_ptr<ASTString> parseStringExpr();
+
+    // expressions
+    std::unique_ptr<ASTExpression> parseParenthesisExpr();
+
+    std::unique_ptr<ASTExpression> parseIdentifierExpr();
+
+    std::unique_ptr<ASTExpression> parsePrimaryExpr();
+
+    std::unique_ptr<ASTExpression> parseBinaryOperatorRHS(int precedence, std::unique_ptr<ASTExpression> LHS);
+
+    //variables
+
+    std::shared_ptr<ASTVariableType> parseVarType();
+
+    std::vector<std::unique_ptr<ASTVariable>> parseVarDeclaration();
+
+    std::vector<std::unique_ptr<ASTConstVariable>> parseConstVarDeclaration();
+
+    // Functions/statements
+
+    std::unique_ptr<ASTExpression> parseContentLine();
+
+    std::unique_ptr<ASTBody> parseBody();
+
+    std::unique_ptr<ASTFunctionPrototype> parseFunctionPrototype();
+
+    std::unique_ptr<ASTFunction> parseFunction();
+
+    std::unique_ptr<ASTIf> parseIfExpr();
+
+    std::unique_ptr<ASTFor> parseFprExr();
+
+    std::unique_ptr<ASTWhile> parseWhileExpr();
+
+    std::unique_ptr<ASTBreak> parseBreak();
+
+    std::unique_ptr<ASTExit> parseExit();
+
+    //references
+
+    std::unique_ptr<ASTArrayReference> parseArrayReference(const std::string &name);
+    std::unique_ptr<ASTAssignOperator> parseAssign(const std::string & var_name);
+    std::unique_ptr<ASTAssignOperator> parseAssign(std::unique_ptr<ASTReference> var_ref);
+
 
 private:
     int getNextToken();
-    
+    bool validateToken(Token correct);
+
     Lexer m_Lexer;            // lexer is used to read tokens
-    int CurTok;               // to keep the current token
-    
+    int m_CurrTok;               // to keep the current token
+
     LLVMContext MilaContext;   // llvm context
     IRBuilder<> MilaBuilder;   // llvm builder
     Module MilaModule;         // llvm module
+
+    std::map<Token, int> m_precedence_table;
 };
 
 #endif //PJPPROJECT_PARSER_HPP

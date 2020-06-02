@@ -15,7 +15,6 @@
     <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Parser.cpp" afterPath="$PROJECT_DIR$/Parser.cpp" />
-      <change beforePath="$PROJECT_DIR$/Parser.hpp" afterPath="$PROJECT_DIR$/Parser.hpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="Parser.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parser.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="215">
-              <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+            <state relative-caret-position="395">
+              <caret line="96" column="61" lean-forward="true" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="61" />
               <folding>
                 <element signature="e#61#81#0" expanded="true" />
               </folding>
@@ -53,8 +52,8 @@
       <file leaf-file-name="Parser.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Parser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="309">
-              <caret line="309" column="9" lean-forward="true" selection-start-line="309" selection-start-column="9" selection-end-line="309" selection-end-column="9" />
+            <state relative-caret-position="203">
+              <caret line="439" column="0" lean-forward="true" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
               <folding />
             </state>
           </provider>
@@ -66,6 +65,7 @@
     <findStrings>
       <find>ident</find>
       <find>array</find>
+      <find>assign</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -233,7 +233,7 @@
       <updated>1590938185596</updated>
       <workItem from="1590938186977" duration="987000" />
       <workItem from="1590939283657" duration="823000" />
-      <workItem from="1590941946898" duration="27082000" />
+      <workItem from="1590941946898" duration="28934000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -284,11 +284,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591116546152</updated>
     </task>
-    <option name="localTasksCounter" value="8" />
+    <task id="LOCAL-00008" summary="implementation if statement">
+      <created>1591118673399</created>
+      <option name="number" value="00008" />
+      <option name="presentableId" value="LOCAL-00008" />
+      <option name="project" value="LOCAL" />
+      <updated>1591118673399</updated>
+    </task>
+    <option name="localTasksCounter" value="9" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="28892000" />
+    <option name="totallyTimeSpent" value="30744000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -336,7 +343,8 @@
     <MESSAGE value="GetToken, change return type" />
     <MESSAGE value="parse expression implementation + number, string, parenthesis" />
     <MESSAGE value="implementation parse function call" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementation parse function call" />
+    <MESSAGE value="implementation if statement" />
+    <option name="LAST_COMMIT_MESSAGE" value="implementation if statement" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -745,8 +753,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parser.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="215">
-          <caret line="78" column="37" lean-forward="true" selection-start-line="78" selection-start-column="37" selection-end-line="78" selection-end-column="37" />
+        <state relative-caret-position="395">
+          <caret line="96" column="61" lean-forward="true" selection-start-line="96" selection-start-column="61" selection-end-line="96" selection-end-column="61" />
           <folding>
             <element signature="e#61#81#0" expanded="true" />
           </folding>
@@ -755,8 +763,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="309">
-          <caret line="309" column="9" lean-forward="true" selection-start-line="309" selection-start-column="9" selection-end-line="309" selection-end-column="9" />
+        <state relative-caret-position="203">
+          <caret line="439" column="0" lean-forward="true" selection-start-line="439" selection-start-column="0" selection-end-line="439" selection-end-column="0" />
           <folding />
         </state>
       </provider>

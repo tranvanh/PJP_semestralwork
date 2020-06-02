@@ -337,6 +337,59 @@ std::unique_ptr<ASTIf> Parser::parseIfStmt() {
 
 }
 
+std::unique_ptr<ASTWhile> Parser::parseWhileStmt() {
+    validateToken(tok_while);
+    getNextToken();
+
+    auto condition = parseExpression();
+    validateToken(tok_do);
+    getNextToken();
+    auto while_body = parseBody();
+
+    return std::make_unique<ASTWhile>(std::move(condition), std::move(while_body));
+
+}
+
+std::unique_ptr<ASTFor> Parser::parseForStmt() {
+    validateToken(tok_for);
+    getNextToken();
+
+    validateToken(tok_identifier);
+    getNextToken();
+    std::string ctrl_var = m_Lexer.identifierStr();
+
+    validateToken(tok_assign);
+    getNextToken();
+
+    auto start = parseExpression();
+    if (!start)
+        return nullptr;
+
+    bool downto;
+    if (m_CurrTok == tok_to)
+        downto = false;
+    else if (m_CurrTok = tok_downto)
+        downto = true;
+    else
+        throw "Expected: 'to' or 'downto'. Recieved: " + tokenToStr(m_CurrTok) + ".";
+
+    getNextToken();
+
+    auto end = parseExpression();
+    if (!end)
+        return nullptr;
+
+    validateToken(tok_do);
+    getNextToken();
+
+    auto for_body = parseBody();
+
+    auto step = nullptr;
+
+    return std::make_unique<ASTFor>(ctrl_var, std::move(start), std::move(end), std::move(step), std::move(for_body),
+                                    downto);
+}
+
 
 std::unique_ptr<ASTExit> Parser::parseExit() {
     return std::make_unique<ASTExit>();
@@ -363,4 +416,38 @@ std::unique_ptr<ASTExpression> Parser::parseStatement() {
             return parseExit();
     }
 }
+
+//Assign
+
+std::unique_ptr<ASTAssignOperator> Parser::parseAssign(std::unique_ptr<ASTReference> var_ref) {
+    validateToken(tok_assign);
+    getNextToken();
+
+    return std::make_unique<ASTAssignOperator>(std::move(var_ref), parseExpression());
+}
+
+std::unique_ptr<ASTAssignOperator> Parser::parseAssign(const std::string &var_name) {
+
+    std::unique_ptr<ASTReference> var_ref = nullptr;
+
+    if (m_CurrTok == tok_leftBracket)
+        var_ref = std::move(parseArrayReference(var_name));
+    else
+        var_ref = std::make_unique<ASTSingleVarReference>(var_name);
+
+    return parseAssign(std::move(var_ref));
+}
+
+std::unique_ptr<ASTArrayReference> Parser::parseArrayReference(const std::string &name) {
+    validateToken(tok_leftBracket);
+    getNextToken();
+
+    auto idx = parseExpression();
+
+    validateToken(tok_rightBracket);
+    getNextToken();
+
+    return std::make_unique<ASTArrayReference>(name, std::move(idx));
+}
+
 

@@ -156,12 +156,12 @@ int Parser::getPrecedence() {
 
 }
 
-
+//TODO
 bool Parser::Parse() {
     getNextToken();
     return true;
 }
-
+//TODO
 const Module &Parser::Generate() {
 
     // create writeln function
@@ -624,5 +624,23 @@ std::vector<std::unique_ptr<ASTConstVariable>> Parser::parseConstVarDeclaration(
 
 
     return std::vector<std::unique_ptr<ASTConstVariable>>();
+}
+
+//Function
+/**
+ * [function_proto]
+ * 'function' function_name '(' {var_name ':' [type] ';'}* ')' ':' [type] ';'
+ */
+std::unique_ptr<ASTFunctionPrototype> Parser::parseFunctionPrototype() {
+
+    return std::unique_ptr<ASTFunctionPrototype>();
+}
+/**
+ * [function_proto] {'forward' ';'}
+ * [var_declaration]
+ * [body_begin_end]
+ */
+std::unique_ptr<ASTFunction> Parser::parseFunction() {
+    return std::unique_ptr<ASTFunction>();
 }
 

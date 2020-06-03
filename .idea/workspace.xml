@@ -15,7 +15,6 @@
     <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change beforePath="$PROJECT_DIR$/Parser.cpp" afterPath="$PROJECT_DIR$/Parser.cpp" />
-      <change beforePath="$PROJECT_DIR$/Parser.hpp" afterPath="$PROJECT_DIR$/Parser.hpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,8 +40,8 @@
       <file leaf-file-name="Parser.hpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Parser.hpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="517">
-              <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+            <state relative-caret-position="189">
+              <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
               <folding>
                 <element signature="e#61#81#0" expanded="true" />
               </folding>
@@ -53,8 +52,8 @@
       <file leaf-file-name="Parser.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Parser.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="287">
-              <caret line="295" column="0" lean-forward="true" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="529" column="0" lean-forward="true" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
               <folding>
                 <element signature="e#0#21#0" expanded="true" />
               </folding>
@@ -70,6 +69,7 @@
       <find>array</find>
       <find>assign</find>
       <find>lhs</find>
+      <find>while</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -174,6 +174,12 @@
               <item name="SimpleFrontend" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
               <item name="PJP_semestralwork" type="462c0819:PsiDirectoryNode" />
               <item name="ast" type="462c0819:PsiDirectoryNode" />
+              <item name="data_types" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SimpleFrontend" type="dad4c3:CidrFilesViewHelper$MyProjectTreeStructure$1" />
+              <item name="PJP_semestralwork" type="462c0819:PsiDirectoryNode" />
+              <item name="ast" type="462c0819:PsiDirectoryNode" />
               <item name="references" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -237,7 +243,7 @@
       <updated>1590938185596</updated>
       <workItem from="1590938186977" duration="987000" />
       <workItem from="1590939283657" duration="823000" />
-      <workItem from="1590941946898" duration="30246000" />
+      <workItem from="1590941946898" duration="32135000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -302,11 +308,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591120588593</updated>
     </task>
-    <option name="localTasksCounter" value="10" />
+    <task id="LOCAL-00010" summary="binary expressions implementation">
+      <created>1591187067641</created>
+      <option name="number" value="00010" />
+      <option name="presentableId" value="LOCAL-00010" />
+      <option name="project" value="LOCAL" />
+      <updated>1591187067641</updated>
+    </task>
+    <option name="localTasksCounter" value="11" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="32056000" />
+    <option name="totallyTimeSpent" value="33945000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -321,7 +334,7 @@
     <frame x="0" y="0" width="1440" height="900" extended-state="0" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.24947146" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32889965" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="CMake" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.31197098" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
@@ -402,7 +415,8 @@
     <MESSAGE value="implementation parse function call" />
     <MESSAGE value="implementation if statement" />
     <MESSAGE value="implementation all statements + assign" />
-    <option name="LAST_COMMIT_MESSAGE" value="implementation all statements + assign" />
+    <MESSAGE value="binary expressions implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="binary expressions implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -811,8 +825,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parser.hpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="517">
-          <caret line="103" column="16" lean-forward="false" selection-start-line="103" selection-start-column="16" selection-end-line="103" selection-end-column="16" />
+        <state relative-caret-position="189">
+          <caret line="73" column="45" lean-forward="false" selection-start-line="73" selection-start-column="45" selection-end-line="73" selection-end-column="45" />
           <folding>
             <element signature="e#61#81#0" expanded="true" />
           </folding>
@@ -821,8 +835,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Parser.cpp">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="287">
-          <caret line="295" column="0" lean-forward="true" selection-start-line="295" selection-start-column="0" selection-end-line="295" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="529" column="0" lean-forward="true" selection-start-line="529" selection-start-column="0" selection-end-line="529" selection-end-column="0" />
           <folding>
             <element signature="e#0#21#0" expanded="true" />
           </folding>

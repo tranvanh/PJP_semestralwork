@@ -1,6 +1,8 @@
 #include "Parser.hpp"
 #include "ast/references/ASTSingleVarReference.hpp"
 #include "ast/operators/ASTBinaryOperator.hpp"
+#include "ast/data_types/ASTInteger.hpp"
+#include "ast/data_types/ASTArray.hpp"
 
 Parser::Parser()
         : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext) {}
@@ -245,6 +247,10 @@ std::unique_ptr<ASTExpression> Parser::parseIdentifierExpr() {
 
 }
 
+/**
+ * [number]
+ * { '-' } tok_number
+ */
 std::unique_ptr<ASTNumber> Parser::parseNumberExpr() {
     int sign = 1;
     if (m_CurrTok == tok_minus) {
@@ -264,6 +270,9 @@ std::unique_ptr<ASTString> Parser::parseStringExpr() {
     return std::make_unique<ASTString>(m_Lexer.strVal());
 }
 
+/**
+ * '(' expression ')'
+ */
 std::unique_ptr<ASTExpression> Parser::parseParenthesisExpr() {
 
     validateToken(tok_leftParenthesis);
@@ -331,7 +340,10 @@ std::unique_ptr<ASTExpression> Parser::parseExpression() {
 }
 
 //statements
-
+/**
+ * [body]
+ * ('begin' {[line]}* 'end') / ([line])
+ */
 std::unique_ptr<ASTBody> Parser::parseBody() {
 
     std::vector<std::unique_ptr<ASTExpression>> content;
@@ -355,6 +367,12 @@ std::unique_ptr<ASTBody> Parser::parseBody() {
     return std::make_unique<ASTBody>(std::move(content));
 }
 
+/**
+ * [if]
+ * 'if' condition
+ * 'then' [body]
+ * {'else' [body]}
+ */
 std::unique_ptr<ASTIf> Parser::parseIfStmt() {
     validateToken(tok_if);
 
@@ -376,6 +394,11 @@ std::unique_ptr<ASTIf> Parser::parseIfStmt() {
 
 }
 
+/**
+ * [while]
+ * 'while' condition 'do'
+ * [body]
+ */
 std::unique_ptr<ASTWhile> Parser::parseWhileStmt() {
     validateToken(tok_while);
     getNextToken();
@@ -389,6 +412,11 @@ std::unique_ptr<ASTWhile> Parser::parseWhileStmt() {
 
 }
 
+/**
+ * [for]
+ * 'for' var_name ':=' [number] 'to'/'downto' [number] 'do'
+ * [body]
+ */
 std::unique_ptr<ASTFor> Parser::parseForStmt() {
     validateToken(tok_for);
     getNextToken();
@@ -457,7 +485,9 @@ std::unique_ptr<ASTExpression> Parser::parseStatement() {
 }
 
 //Assign
-
+/**
+ * [var_reference] ':=' expression
+ */
 std::unique_ptr<ASTAssignOperator> Parser::parseAssign(std::unique_ptr<ASTReference> var_ref) {
     validateToken(tok_assign);
     getNextToken();
@@ -465,6 +495,9 @@ std::unique_ptr<ASTAssignOperator> Parser::parseAssign(std::unique_ptr<ASTRefere
     return std::make_unique<ASTAssignOperator>(std::move(var_ref), parseExpression());
 }
 
+/**
+ * [var_reference] ':=' expression
+ */
 std::unique_ptr<ASTAssignOperator> Parser::parseAssign(const std::string &var_name) {
 
     std::unique_ptr<ASTReference> var_ref = nullptr;
@@ -477,6 +510,9 @@ std::unique_ptr<ASTAssignOperator> Parser::parseAssign(const std::string &var_na
     return parseAssign(std::move(var_ref));
 }
 
+/**
+ * identifier '[' expression ']'
+ */
 std::unique_ptr<ASTArrayReference> Parser::parseArrayReference(const std::string &name) {
     validateToken(tok_leftBracket);
     getNextToken();
@@ -487,5 +523,106 @@ std::unique_ptr<ASTArrayReference> Parser::parseArrayReference(const std::string
     getNextToken();
 
     return std::make_unique<ASTArrayReference>(name, std::move(idx));
+}
+
+
+//Variables
+
+/**
+ * [type]
+ * 'integer' | 'array' '[' [number] '..' [number] ']' 'of' [type]
+ */
+std::shared_ptr<ASTVariableType> Parser::parseVarType() {
+    if (m_CurrTok == tok_integer) {
+        getNextToken();
+        return std::make_shared<ASTInteger>();
+    } else if (m_CurrTok == tok_array) { // array type
+        getNextToken();
+        validateToken(tok_leftBracket);
+        getNextToken();
+
+        auto lower = parseNumberExpr();
+
+        for (int i = 0; i < 2; ++i) {
+            validateToken(tok_dot);
+            getNextToken();
+        }
+
+        auto upper = parseNumberExpr();
+
+        validateToken(tok_rightBracket);
+        validateToken(tok_of);
+        getNextToken();
+
+        auto type = parseVarType();
+        return std::make_shared<ASTArray>(std::move(lower), std::move(upper), type);
+    }
+    return nullptr;
+}
+
+/**
+ * [var_declaration]
+ * 'var' {identifier {',' identifier}* ':' [type] ';'}+
+ */
+std::vector<std::unique_ptr<ASTVariable>> Parser::parseVarDeclaration() {
+    validateToken(tok_var);
+    getNextToken();
+
+    if (m_CurrTok == tok_identifier) {
+        std::vector<std::unique_ptr<ASTVariable>> res;
+        std::vector<std::string> var_name;
+
+        getNextToken();
+
+        while (m_CurrTok == tok_comma) {
+            getNextToken();
+            validateToken(tok_identifier);
+            var_name.push_back(m_Lexer.identifierStr());
+            getNextToken();
+        }
+
+        validateToken(tok_colon);
+        getNextToken();
+
+        auto type = parseVarType();
+        validateToken(tok_semicolon);
+        getNextToken();
+
+        for (const std::string &name : var_name)
+            res.emplace_back(std::make_unique<ASTVariable>(name, type));
+        return res;
+    }
+    return std::vector<std::unique_ptr<ASTVariable>>();
+}
+
+/**
+ * [const_declaration]
+ * 'const' {identifier '=' value ';'}+
+ */
+std::vector<std::unique_ptr<ASTConstVariable>> Parser::parseConstVarDeclaration() {
+
+    validateToken(tok_const);
+    getNextToken();
+
+    std::vector<std::unique_ptr<ASTConstVariable>> res;
+
+    do {
+        validateToken(tok_identifier);
+        std::string name = m_Lexer.identifierStr();
+        getNextToken();
+
+        validateToken(tok_equal);
+        getNextToken();
+
+        validateToken(tok_number);
+        res.emplace_back(std::make_unique<ASTConstVariable>(name, m_Lexer.numVal()));
+        getNextToken();
+
+        validateToken(tok_semicolon);
+        getNextToken();
+    } while (m_CurrTok == tok_identifier);
+
+
+    return std::vector<std::unique_ptr<ASTConstVariable>>();
 }
 

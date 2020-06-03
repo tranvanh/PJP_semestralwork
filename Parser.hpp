@@ -101,6 +101,7 @@ public:
 
 private:
     Token getNextToken();
+    int getPrecedence();
     bool validateToken(Token tok);
 
     Lexer m_Lexer;            // lexer is used to read tokens

@@ -1,5 +1,6 @@
 #include "Parser.hpp"
 #include "ast/references/ASTSingleVarReference.hpp"
+#include "ast/operators/ASTBinaryOperator.hpp"
 
 Parser::Parser()
         : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext) {}
@@ -145,6 +146,15 @@ bool Parser::validateToken(Token tok) {
     throw "Expect: '" + tokenToStr(tok) + "'. Received: '" + tokenToStr(m_CurrTok) + "'.";
 }
 
+int Parser::getPrecedence() {
+    auto it = m_precedence_table.find(m_CurrTok);
+    if (it == m_precedence_table.end())
+        return -1;
+    return it->second;
+
+}
+
+
 bool Parser::Parse() {
     getNextToken();
     return true;
@@ -283,6 +293,35 @@ std::unique_ptr<ASTExpression> Parser::parsePrimaryExpr() {
             throw ("Primary expression beginning with unexpected token");
     }
 }
+
+
+std::unique_ptr<ASTExpression> Parser::parseBinaryOperatorRHS(int precedence, std::unique_ptr<ASTExpression> LHS) {
+    while (true) {
+        int curr_prec = getPrecedence();
+        if (curr_prec < precedence)
+            return LHS;
+
+        Token bin_op = m_CurrTok;
+        getNextToken();
+
+        auto RHS = parsePrimaryExpr();
+        if (!RHS)
+            return nullptr;
+
+        int next_prec = getPrecedence();
+        if (curr_prec < next_prec) {
+            RHS = parseBinaryOperatorRHS(curr_prec + 1, std::move(RHS));
+            if (!RHS)
+                return nullptr;
+        }
+
+        LHS = std::make_unique<ASTBinaryOperator>(bin_op, std::move(LHS), move(RHS));
+    }
+
+
+    return std::unique_ptr<ASTExpression>();
+}
+
 
 std::unique_ptr<ASTExpression> Parser::parseExpression() {
     auto LHS = parsePrimaryExpr();
@@ -449,5 +488,4 @@ std::unique_ptr<ASTArrayReference> Parser::parseArrayReference(const std::string
 
     return std::make_unique<ASTArrayReference>(name, std::move(idx));
 }
-
 

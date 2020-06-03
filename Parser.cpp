@@ -161,6 +161,7 @@ bool Parser::Parse() {
     getNextToken();
     return true;
 }
+
 //TODO
 const Module &Parser::Generate() {
 
@@ -633,14 +634,83 @@ std::vector<std::unique_ptr<ASTConstVariable>> Parser::parseConstVarDeclaration(
  */
 std::unique_ptr<ASTFunctionPrototype> Parser::parseFunctionPrototype() {
 
-    return std::unique_ptr<ASTFunctionPrototype>();
+    if (m_CurrTok != tok_function && m_CurrTok != tok_procedure)
+        return nullptr;
+    bool is_funct = m_CurrTok == tok_function ? true : false; // else proccedure
+    getNextToken();
+
+    validateToken(tok_identifier);
+    std::string funct_name = m_Lexer.identifierStr();
+    getNextToken();
+
+    validateToken(tok_leftParenthesis);
+    getNextToken();
+
+    std::vector<std::unique_ptr<ASTVariable>> params;
+
+    //pars params
+    while (m_CurrTok == tok_identifier) {
+        std::string param_name = m_Lexer.identifierStr();
+        getNextToken();
+
+        validateToken(tok_colon);
+        auto type = parseVarType();
+
+        params.push_back(std::make_unique<ASTVariable>(param_name, type));
+
+        if (m_CurrTok != tok_semicolon)
+            break;
+
+        getNextToken();
+    }
+
+    validateToken(tok_rightParenthesis);
+    getNextToken();
+
+    std::shared_ptr<ASTVariableType> ret_type = nullptr;
+    if (is_funct) {
+        validateToken(tok_colon);
+        getNextToken();
+
+        ret_type = parseVarType();
+    }
+
+    validateToken(tok_semicolon);
+    getNextToken();
+
+    return std::make_unique<ASTFunctionPrototype>(funct_name, std::move(params), ret_type);
 }
+
 /**
  * [function_proto] {'forward' ';'}
  * [var_declaration]
  * [body_begin_end]
  */
 std::unique_ptr<ASTFunction> Parser::parseFunction() {
-    return std::unique_ptr<ASTFunction>();
+    auto prototype = parseFunctionPrototype();
+
+    std::vector<std::unique_ptr<ASTVariable>> loc_var;
+
+    if (m_CurrTok == tok_forward) {
+        getNextToken();
+        validateToken(tok_semicolon);
+        getNextToken();
+
+        return std::make_unique<ASTFunction>(std::move(prototype), std::move(loc_var), nullptr);
+    }
+
+    while (m_CurrTok == tok_var) {
+        auto vars = parseVarDeclaration();
+        for (const auto &v : vars)
+            loc_var.push_back(std::move(v));
+    }
+    validateToken(tok_begin);
+
+    auto body = parseBody();
+
+    validateToken(tok_semicolon);
+    getNextToken();
+
+    return std::make_unique<ASTFunction>(std::move(prototype), std::move(loc_var), std::move(body));
 }
 

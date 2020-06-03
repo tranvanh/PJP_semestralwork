@@ -156,10 +156,49 @@ int Parser::getPrecedence() {
 
 }
 
-//TODO
-bool Parser::Parse() {
+/**
+ * 'program' name ';'
+ * [var_declaration]
+ * [const_declaration]
+ * [function] [procedure]
+ * [main]
+ */
+std::unique_ptr<ASTProgram> Parser::Parse() {
     getNextToken();
-    return true;
+
+    validateToken(tok_program);
+    getNextToken();
+
+    validateToken(tok_identifier);
+    std::string program_name = m_Lexer.identifierStr();
+    getNextToken();
+
+    validateToken(tok_semicolon);
+    getNextToken();
+
+    std::vector<std::unique_ptr<ASTVariableDef>> glob_vars;
+    std::vector<std::unique_ptr<ASTFunction>> functs;
+
+    std::unique_ptr<ASTBody> main;
+
+    while (true) {
+        if (m_CurrTok == tok_const || m_CurrTok == tok_var) {
+            auto var_res = m_CurrTok == tok_const ? parseConstVarDeclaration() : parseVarDeclaration();
+            for (const auto &c : var_res)
+                glob_vars.push_back(std::move(c));
+        } else if (m_CurrTok == tok_function || m_CurrTok == tok_procedure)
+            functs.emplace_back(parseFunction());
+        else {
+            main = parseBody();
+            break;
+        }
+    }
+
+    validateToken(tok_dot);
+    getNextToken();
+
+    return std::make_unique<ASTProgram>(program_name, std::move(glob_vars),
+                                        std::move(functs), std::move(main));
 }
 
 //TODO
@@ -636,7 +675,7 @@ std::unique_ptr<ASTFunctionPrototype> Parser::parseFunctionPrototype() {
 
     if (m_CurrTok != tok_function && m_CurrTok != tok_procedure)
         return nullptr;
-    bool is_funct = m_CurrTok == tok_function ? true : false; // else proccedure
+    bool is_funct = m_CurrTok == tok_function ? true : false; // else proccedure, no return type
     getNextToken();
 
     validateToken(tok_identifier);

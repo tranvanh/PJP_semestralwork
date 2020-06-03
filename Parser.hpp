@@ -32,6 +32,7 @@
 #include "ast/references/ASTArrayReference.hpp"
 #include "ast/operators/ASTAssignOperator.hpp"
 #include "ast/function/ASTFunctionCall.hpp"
+#include "ast/ASTProgram.hpp"
 
 using namespace llvm;
 
@@ -43,7 +44,7 @@ public:
 
     ~Parser() = default;
 
-    bool Parse();             // parse
+    std::unique_ptr<ASTProgram> Parse();             // parse
     const Module &Generate(); // generate
 
 

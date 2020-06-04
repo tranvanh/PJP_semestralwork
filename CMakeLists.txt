@@ -1,7 +1,8 @@
 cmake_minimum_required(VERSION 3.4.3)
 project(SimpleFrontend)
 
-set(CMAKE_CXX_STANDARD 14)
+set(CMAKE_CXX_STANDARD 17)
+set(CMAKE_CXX_FLAGS "-Wall")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER clang++)
@@ -28,3 +29,7 @@ llvm_map_components_to_libnames(llvm_libs support core irreader)
 
 # Link against LLVM libraries
 target_link_libraries(mila ${llvm_libs})
+#set(llvmCodeGenLibs XCoreCodeGen SystemZCodeGen SparcCodeGen PowerPCCodeGen NVPTXCodeGen MSP430CodeGen MipsCodeGen LanaiCodeGen HexagonCodeGen BPFCodeGen ARMCodeGen AMDGPUCodeGen AArch64CodeGen X86CodeGen CodeGen SystemZAsmParser SparcAsmParser PowerPCAsmParser MipsAsmParser LanaiAsmParser HexagonAsmParser BPFAsmParser ARMAsmParser AMDGPUAsmParser AArch64AsmParser X86AsmParser AsmParser)
+
+#llvm_map_components_to_libnames(llvm_libs support core irreader target ${llvmCodeGenLibs})
+#target_link_libraries(mila ${llvm_libs})

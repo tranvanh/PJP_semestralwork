@@ -5,7 +5,15 @@
 #include "codegen.cpp"
 #include "../ast/function/ASTFunctionCall.hpp"
 #include "../ast/references/ASTSingleVarReference.hpp"
+/// CreateEntryBlockAlloca - Create an alloca instruction in the entry block of
+/// the function.  This is used for mutable variables etc.
+static AllocaInst * CreateEntryBlockAlloca(Function *TheFunction, const std::string &VarName, Type * type)
+{
+    IRBuilder<> TmpB(&TheFunction -> getEntryBlock(), TheFunction -> getEntryBlock().begin());
 
+    auto init_value = ConstantInt::get(Type::getInt32Ty(TheContext), (type->isArrayTy() ? type->getArrayNumElements() : 0), false);
+    return TmpB.CreateAlloca(type, init_value, VarName.c_str());
+}
 
 Value *ASTFunctionCall::codegen() {
     if (m_Name == "writeln" || m_Name == "write") {

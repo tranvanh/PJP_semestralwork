@@ -34,18 +34,16 @@
 #include "ast/function/ASTFunctionCall.hpp"
 #include "ast/ASTProgram.hpp"
 
-using namespace llvm;
 
 class Parser {
 public:
-    Parser();
+//    Parser();
 
     Parser(const std::string &file_name);
 
     ~Parser() = default;
 
     std::unique_ptr<ASTProgram> Parse();             // parse
-    const Module &Generate(); // generate
 
 
     std::unique_ptr<ASTExpression> parseExpression();
@@ -107,10 +105,6 @@ private:
 
     Lexer m_Lexer;            // lexer is used to read tokens
     Token m_CurrTok;               // to keep the current token
-
-    LLVMContext MilaContext;   // llvm context
-    IRBuilder<> MilaBuilder;   // llvm builder
-    Module MilaModule;         // llvm module
 
     std::map<Token, int> m_precedence_table;
 };

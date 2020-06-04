@@ -705,6 +705,222 @@ CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.provides: CMakeFiles/mila.dir/ast/ASTPr
 CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.provides.build: CMakeFiles/mila.dir/ast/ASTProgram.cpp.o
 
 
+CMakeFiles/mila.dir/codegen/codegen.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../codegen/codegen.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Building CXX object CMakeFiles/mila.dir/codegen/codegen.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/codegen.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/codegen.cpp
+
+CMakeFiles/mila.dir/codegen/codegen.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/codegen.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/codegen.cpp > CMakeFiles/mila.dir/codegen/codegen.cpp.i
+
+CMakeFiles/mila.dir/codegen/codegen.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/codegen.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/codegen.cpp -o CMakeFiles/mila.dir/codegen/codegen.cpp.s
+
+CMakeFiles/mila.dir/codegen/codegen.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/codegen.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/codegen.cpp.o.provides: CMakeFiles/mila.dir/codegen/codegen.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/codegen.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/codegen.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/codegen.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/codegen.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/constants.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/constants.cpp.o: ../codegen/constants.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_29) "Building CXX object CMakeFiles/mila.dir/codegen/constants.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/constants.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/constants.cpp
+
+CMakeFiles/mila.dir/codegen/constants.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/constants.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/constants.cpp > CMakeFiles/mila.dir/codegen/constants.cpp.i
+
+CMakeFiles/mila.dir/codegen/constants.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/constants.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/constants.cpp -o CMakeFiles/mila.dir/codegen/constants.cpp.s
+
+CMakeFiles/mila.dir/codegen/constants.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/constants.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/constants.cpp.o.provides: CMakeFiles/mila.dir/codegen/constants.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/constants.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/constants.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/constants.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/constants.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/data_types.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/data_types.cpp.o: ../codegen/data_types.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_30) "Building CXX object CMakeFiles/mila.dir/codegen/data_types.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/data_types.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/data_types.cpp
+
+CMakeFiles/mila.dir/codegen/data_types.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/data_types.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/data_types.cpp > CMakeFiles/mila.dir/codegen/data_types.cpp.i
+
+CMakeFiles/mila.dir/codegen/data_types.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/data_types.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/data_types.cpp -o CMakeFiles/mila.dir/codegen/data_types.cpp.s
+
+CMakeFiles/mila.dir/codegen/data_types.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/data_types.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/data_types.cpp.o.provides: CMakeFiles/mila.dir/codegen/data_types.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/data_types.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/data_types.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/data_types.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/data_types.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/body.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/body.cpp.o: ../codegen/body.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_31) "Building CXX object CMakeFiles/mila.dir/codegen/body.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/body.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/body.cpp
+
+CMakeFiles/mila.dir/codegen/body.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/body.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/body.cpp > CMakeFiles/mila.dir/codegen/body.cpp.i
+
+CMakeFiles/mila.dir/codegen/body.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/body.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/body.cpp -o CMakeFiles/mila.dir/codegen/body.cpp.s
+
+CMakeFiles/mila.dir/codegen/body.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/body.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/body.cpp.o.provides: CMakeFiles/mila.dir/codegen/body.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/body.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/body.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/body.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/body.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/variable.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/variable.cpp.o: ../codegen/variable.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_32) "Building CXX object CMakeFiles/mila.dir/codegen/variable.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/variable.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/variable.cpp
+
+CMakeFiles/mila.dir/codegen/variable.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/variable.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/variable.cpp > CMakeFiles/mila.dir/codegen/variable.cpp.i
+
+CMakeFiles/mila.dir/codegen/variable.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/variable.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/variable.cpp -o CMakeFiles/mila.dir/codegen/variable.cpp.s
+
+CMakeFiles/mila.dir/codegen/variable.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/variable.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/variable.cpp.o.provides: CMakeFiles/mila.dir/codegen/variable.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/variable.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/variable.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/variable.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/variable.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/function.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/function.cpp.o: ../codegen/function.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_33) "Building CXX object CMakeFiles/mila.dir/codegen/function.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/function.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/function.cpp
+
+CMakeFiles/mila.dir/codegen/function.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/function.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/function.cpp > CMakeFiles/mila.dir/codegen/function.cpp.i
+
+CMakeFiles/mila.dir/codegen/function.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/function.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/function.cpp -o CMakeFiles/mila.dir/codegen/function.cpp.s
+
+CMakeFiles/mila.dir/codegen/function.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/function.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/function.cpp.o.provides: CMakeFiles/mila.dir/codegen/function.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/function.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/function.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/function.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/function.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/statements.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/statements.cpp.o: ../codegen/statements.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_34) "Building CXX object CMakeFiles/mila.dir/codegen/statements.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/statements.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/statements.cpp
+
+CMakeFiles/mila.dir/codegen/statements.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/statements.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/statements.cpp > CMakeFiles/mila.dir/codegen/statements.cpp.i
+
+CMakeFiles/mila.dir/codegen/statements.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/statements.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/statements.cpp -o CMakeFiles/mila.dir/codegen/statements.cpp.s
+
+CMakeFiles/mila.dir/codegen/statements.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/statements.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/statements.cpp.o.provides: CMakeFiles/mila.dir/codegen/statements.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/statements.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/statements.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/statements.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/statements.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/references.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/references.cpp.o: ../codegen/references.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_35) "Building CXX object CMakeFiles/mila.dir/codegen/references.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/references.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/references.cpp
+
+CMakeFiles/mila.dir/codegen/references.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/references.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/references.cpp > CMakeFiles/mila.dir/codegen/references.cpp.i
+
+CMakeFiles/mila.dir/codegen/references.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/references.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/references.cpp -o CMakeFiles/mila.dir/codegen/references.cpp.s
+
+CMakeFiles/mila.dir/codegen/references.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/references.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/references.cpp.o.provides: CMakeFiles/mila.dir/codegen/references.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/references.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/references.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/references.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/references.cpp.o
+
+
+CMakeFiles/mila.dir/codegen/operators.cpp.o: CMakeFiles/mila.dir/flags.make
+CMakeFiles/mila.dir/codegen/operators.cpp.o: ../codegen/operators.cpp
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_36) "Building CXX object CMakeFiles/mila.dir/codegen/operators.cpp.o"
+	clang++  $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -o CMakeFiles/mila.dir/codegen/operators.cpp.o -c /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/operators.cpp
+
+CMakeFiles/mila.dir/codegen/operators.cpp.i: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Preprocessing CXX source to CMakeFiles/mila.dir/codegen/operators.cpp.i"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -E /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/operators.cpp > CMakeFiles/mila.dir/codegen/operators.cpp.i
+
+CMakeFiles/mila.dir/codegen/operators.cpp.s: cmake_force
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green "Compiling CXX source to assembly CMakeFiles/mila.dir/codegen/operators.cpp.s"
+	clang++ $(CXX_DEFINES) $(CXX_INCLUDES) $(CXX_FLAGS) -S /Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/operators.cpp -o CMakeFiles/mila.dir/codegen/operators.cpp.s
+
+CMakeFiles/mila.dir/codegen/operators.cpp.o.requires:
+
+.PHONY : CMakeFiles/mila.dir/codegen/operators.cpp.o.requires
+
+CMakeFiles/mila.dir/codegen/operators.cpp.o.provides: CMakeFiles/mila.dir/codegen/operators.cpp.o.requires
+	$(MAKE) -f CMakeFiles/mila.dir/build.make CMakeFiles/mila.dir/codegen/operators.cpp.o.provides.build
+.PHONY : CMakeFiles/mila.dir/codegen/operators.cpp.o.provides
+
+CMakeFiles/mila.dir/codegen/operators.cpp.o.provides.build: CMakeFiles/mila.dir/codegen/operators.cpp.o
+
+
 # Object files for target mila
 mila_OBJECTS = \
 "CMakeFiles/mila.dir/main.cpp.o" \
@@ -733,7 +949,16 @@ mila_OBJECTS = \
 "CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o" \
 "CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o" \
 "CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o" \
-"CMakeFiles/mila.dir/ast/ASTProgram.cpp.o"
+"CMakeFiles/mila.dir/ast/ASTProgram.cpp.o" \
+"CMakeFiles/mila.dir/codegen/codegen.cpp.o" \
+"CMakeFiles/mila.dir/codegen/constants.cpp.o" \
+"CMakeFiles/mila.dir/codegen/data_types.cpp.o" \
+"CMakeFiles/mila.dir/codegen/body.cpp.o" \
+"CMakeFiles/mila.dir/codegen/variable.cpp.o" \
+"CMakeFiles/mila.dir/codegen/function.cpp.o" \
+"CMakeFiles/mila.dir/codegen/statements.cpp.o" \
+"CMakeFiles/mila.dir/codegen/references.cpp.o" \
+"CMakeFiles/mila.dir/codegen/operators.cpp.o"
 
 # External object files for target mila
 mila_EXTERNAL_OBJECTS =
@@ -765,6 +990,15 @@ mila: CMakeFiles/mila.dir/ast/references/ASTArrayReference.cpp.o
 mila: CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o
 mila: CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o
 mila: CMakeFiles/mila.dir/ast/ASTProgram.cpp.o
+mila: CMakeFiles/mila.dir/codegen/codegen.cpp.o
+mila: CMakeFiles/mila.dir/codegen/constants.cpp.o
+mila: CMakeFiles/mila.dir/codegen/data_types.cpp.o
+mila: CMakeFiles/mila.dir/codegen/body.cpp.o
+mila: CMakeFiles/mila.dir/codegen/variable.cpp.o
+mila: CMakeFiles/mila.dir/codegen/function.cpp.o
+mila: CMakeFiles/mila.dir/codegen/statements.cpp.o
+mila: CMakeFiles/mila.dir/codegen/references.cpp.o
+mila: CMakeFiles/mila.dir/codegen/operators.cpp.o
 mila: CMakeFiles/mila.dir/build.make
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMSupport.a
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMCore.a
@@ -778,7 +1012,7 @@ mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMBitstreamReader.a
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMSupport.a
 mila: /usr/local/Cellar/llvm/10.0.0_3/lib/libLLVMDemangle.a
 mila: CMakeFiles/mila.dir/link.txt
-	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_28) "Linking CXX executable mila"
+	@$(CMAKE_COMMAND) -E cmake_echo_color --switch=$(COLOR) --green --bold --progress-dir=/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug/CMakeFiles --progress-num=$(CMAKE_PROGRESS_37) "Linking CXX executable mila"
 	$(CMAKE_COMMAND) -E cmake_link_script CMakeFiles/mila.dir/link.txt --verbose=$(VERBOSE)
 
 # Rule to build all files generated by this target.
@@ -813,6 +1047,15 @@ CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/references/ASTArrayReferen
 CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/operators/ASTAssignOperator.cpp.o.requires
 CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/operators/ASTBinaryOperator.cpp.o.requires
 CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/ast/ASTProgram.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/codegen.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/constants.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/data_types.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/body.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/variable.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/function.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/statements.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/references.cpp.o.requires
+CMakeFiles/mila.dir/requires: CMakeFiles/mila.dir/codegen/operators.cpp.o.requires
 
 .PHONY : CMakeFiles/mila.dir/requires
 

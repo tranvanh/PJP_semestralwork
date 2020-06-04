@@ -12,6 +12,6 @@ Type *ASTInteger::codegen() {
 
 Type *ASTArray::codegen() {
     Type *elem_type = m_Type->codegen();
-    int size = (m_UpperIdx->value) - (m_LowerIdx->value) + 1;
+    int size = (m_UpperIdx->m_Value) - (m_LowerIdx->m_Value) + 1;
     return ArrayType::get(elem_type, size);
 }

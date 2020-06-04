@@ -40,6 +40,15 @@ static Value *decimal_specifier_character;
 static Value *string_specifier_character;
 static Value *new_line_specifier;
 
+/// CreateEntryBlockAlloca - Create an alloca instruction in the entry block of
+/// the function.  This is used for mutable variables etc.
+static AllocaInst * CreateEntryBlockAlloca(Function *TheFunction, const std::string &VarName, Type * type)
+{
+    IRBuilder<> TmpB(&TheFunction -> getEntryBlock(), TheFunction -> getEntryBlock().begin());
+
+    auto init_value = ConstantInt::get(Type::getInt32Ty(TheContext), (type->isArrayTy() ? type->getArrayNumElements() : 0), false);
+    return TmpB.CreateAlloca(type, init_value, VarName.c_str());
+}
 
 Value *ASTProgram::codegen() {
     // Printf and scanf declarations
@@ -152,9 +161,11 @@ std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
     }
 
     legacy::PassManager pass;
-    auto file_type = TargetMachine::CGFT_ObjectFile;
+//    auto file_type = TargetMachine::CGFT_ObjectFile;
+    auto file_type = CGFT_ObjectFile;
 
-    if (TheTargetMachine->addPassesToEmitFile(pass, dest, file_type)) {
+    if (TheTargetMachine->addPassesToEmitFile(pass, (raw_pwrite_stream &) outs(),
+                                              (raw_pwrite_stream *) (&outs()), file_type)) {
         errs() << "TheTargetMachine can't emit a file of this type";
         return nullptr;
     }

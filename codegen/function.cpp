@@ -6,6 +6,7 @@
 #include "../ast/function/ASTFunctionCall.hpp"
 #include "../ast/references/ASTSingleVarReference.hpp"
 
+
 Value *ASTFunctionCall::codegen() {
     if (m_Name == "writeln" || m_Name == "write") {
         if (m_Arguments.size() == 0) {
@@ -72,7 +73,7 @@ Value *ASTFunctionCall::codegen() {
 Function *ASTFunctionPrototype::codegen() {
     std::vector<Type *> param_types;
     for (auto &param : m_Parameters)
-        param_types.push_back(param->type->codegen());
+        param_types.push_back(param->m_Type->codegen());
 
     FunctionType *function_type;
     if (m_ReturnType) // Function
@@ -117,22 +118,22 @@ Function *ASTFunction::codegen() {
         // Store arg into the alloca.
         Builder.CreateStore(&arg, alloca);
         // Add m_Arguments to variable symbol table.
-        named_values[arg.getName()] = std::make_pair(alloca, m_Prototype->parameters[idx++]->type);
+        named_values[arg.getName()] = std::make_pair(alloca, m_Prototype->m_Parameters[idx++]->m_Type);
     }
 
     // Local variables
     for (auto &var : m_LocalVariables) {
-        auto type_value = var->type->codegen();
+        auto type_value = var->m_Type->codegen();
         AllocaInst *alloca = CreateEntryBlockAlloca(function, var->m_Name, type_value);
         // Builder.CreateStore(ConstantInt::get(TheContext, APInt(32, 0, true)), alloca);  // TODO not for arrays
-        named_values[var->m_Name] = std::make_pair(alloca, var->type);
+        named_values[var->m_Name] = std::make_pair(alloca, var->m_Type);
     }
 
     // Return variable for functions
-    if (m_Prototype->returnType) {
-        AllocaInst *alloca = CreateEntryBlockAlloca(function, m_Prototype->getName(), m_Prototype->returnType->codegen());
+    if (m_Prototype->m_ReturnType) {
+        AllocaInst *alloca = CreateEntryBlockAlloca(function, m_Prototype->getName(), m_Prototype->m_ReturnType->codegen());
         // Builder.CreateStore(ConstantInt::get(TheContext, APInt(32, 0, true)), alloca);  // TODO not for arrays
-        named_values[m_Prototype->getName()] = std::make_pair(alloca, m_Prototype->returnType);;
+        named_values[m_Prototype->getName()] = std::make_pair(alloca, m_Prototype->m_ReturnType);;
     }
 
 
@@ -146,7 +147,7 @@ Function *ASTFunction::codegen() {
     Builder.CreateBr(return_BB);
     Builder.SetInsertPoint(return_BB);
 
-    if (m_Prototype->returnType) {
+    if (m_Prototype->m_ReturnType) {
         auto return_value = Builder.CreateLoad(named_values[m_Prototype->getName()].first);
         Builder.CreateRet(return_value);
     } else {

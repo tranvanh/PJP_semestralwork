@@ -10,6 +10,7 @@
 #include "../references/ASTReference.hpp"
 
 class ASTAssignOperator : public ASTExpression {
+public:
     ASTAssignOperator(std::unique_ptr<ASTReference> variable,
                       std::unique_ptr<ASTExpression> value
     );

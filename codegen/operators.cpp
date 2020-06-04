@@ -9,7 +9,7 @@
 Value * ASTAssignOperator::codegen ()
 {
     // Find alloca address of left side
-    Value * alloca = m_Variable -> getAlloca();
+    Value * alloca = m_Variable -> getAlloc();
     if ( !alloca )
         return nullptr;
 

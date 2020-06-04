@@ -168,7 +168,7 @@ Value *ASTBreak::codegen() {
     auto parent = Builder.GetInsertBlock()->getParent();
     BasicBlock *after_BB = nullptr;
 
-    for (const auto &b : parent->getBasicBlockList()) {
+    for (auto &b : parent->getBasicBlockList()) {
         if (b.getName().startswith("after_block")) {
             after_BB = &b;
             break;

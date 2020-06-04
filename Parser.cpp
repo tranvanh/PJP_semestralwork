@@ -184,12 +184,12 @@ std::unique_ptr<ASTProgram> Parser::Parse() {
     while (true) {
         if (m_CurrTok == tok_var) {
             auto global_vars = parseVarDeclaration();
-            for (const auto &v : global_vars)
-                glob_vars.emplace_back(std::move(v));
+            for (auto &v : global_vars)
+                glob_vars.push_back(std::move(v));
         } else if (m_CurrTok == tok_const) {
             auto const_vars = parseConstVarDeclaration();
-            for (const auto &v : const_vars)
-                glob_vars.emplace_back(std::move(v));
+            for (auto &v : const_vars)
+                glob_vars.push_back(std::move(v));
         } else if (m_CurrTok == tok_function || m_CurrTok == tok_procedure)
             functs.emplace_back(parseFunction());
         else {
@@ -714,7 +714,7 @@ std::unique_ptr<ASTFunction> Parser::parseFunction() {
 
     while (m_CurrTok == tok_var) {
         auto vars = parseVarDeclaration();
-        for (const auto &v : vars)
+        for (auto &v : vars)
             loc_var.push_back(std::move(v));
     }
     validateToken(tok_begin);

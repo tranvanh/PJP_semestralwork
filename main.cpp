@@ -19,7 +19,7 @@ int main(int argc, char *argv[]) {
 
     try {
         std::unique_ptr<ASTProgram> parsed_program(parser.Parse());
-        parser.Generate().print(outs(), nullptr);
+        parsed_program -> runCodegen(output_file);
     } catch (const char *exception) {
         printf("Error while compiling %s\n", input_file.c_str());
         printf("%s\n", exception);

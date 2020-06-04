@@ -13,29 +13,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="">
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/body.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/codegen.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/constants.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/data_types.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/function.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/operators.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/references.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/statements.cpp" />
-      <change beforePath="" afterPath="$PROJECT_DIR$/codegen/variable.cpp" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" afterPath="$PROJECT_DIR$/CMakeLists.txt" />
-      <change beforePath="$PROJECT_DIR$/Parser.cpp" afterPath="$PROJECT_DIR$/Parser.cpp" />
-      <change beforePath="$PROJECT_DIR$/Parser.hpp" afterPath="$PROJECT_DIR$/Parser.hpp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/cmake_clean.cmake" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/cmake_clean.cmake" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/progress.make" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/progress.make" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" afterPath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" afterPath="$PROJECT_DIR$/main.cpp" />
     </list>
     <ignored path="$PROJECT_DIR$/cmake-build-debug/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -48,11 +27,11 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="CMakeBuildProfile:Debug" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="false">
+      <file leaf-file-name="main.cpp" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/main.cpp">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="120">
-              <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
+            <state relative-caret-position="285">
+              <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
               <folding />
             </state>
           </provider>
@@ -94,7 +73,7 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="operators.cpp" pinned="false" current-in-tab="true">
+      <file leaf-file-name="operators.cpp" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/codegen/operators.cpp">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="382">
@@ -187,7 +166,6 @@
         <option value="$PROJECT_DIR$/Lexer.cpp" />
         <option value="$PROJECT_DIR$/Lexer.hpp" />
         <option value="$PROJECT_DIR$/ast/ASTProgram.hpp" />
-        <option value="$PROJECT_DIR$/main.cpp" />
         <option value="$PROJECT_DIR$/Codegen.hpp" />
         <option value="$PROJECT_DIR$/Parser.hpp" />
         <option value="$PROJECT_DIR$/Parser.cpp" />
@@ -201,6 +179,7 @@
         <option value="$PROJECT_DIR$/codegen/references.cpp" />
         <option value="$PROJECT_DIR$/codegen/function.cpp" />
         <option value="$PROJECT_DIR$/codegen/operators.cpp" />
+        <option value="$PROJECT_DIR$/main.cpp" />
       </list>
     </option>
   </component>
@@ -320,7 +299,7 @@
       <workItem from="1590938186977" duration="987000" />
       <workItem from="1590939283657" duration="823000" />
       <workItem from="1590941946898" duration="37309000" />
-      <workItem from="1591201909702" duration="5164000" />
+      <workItem from="1591201909702" duration="5355000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -427,11 +406,18 @@
       <option name="project" value="LOCAL" />
       <updated>1591202160558</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="codegen implementation">
+      <created>1591276703728</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1591276703728</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44283000" />
+    <option name="totallyTimeSpent" value="44474000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -512,7 +498,8 @@
     <MESSAGE value="function/proccedure implementation" />
     <MESSAGE value="parser implementation" />
     <MESSAGE value="main implementation" />
-    <option name="LAST_COMMIT_MESSAGE" value="main implementation" />
+    <MESSAGE value="codegen implementation" />
+    <option name="LAST_COMMIT_MESSAGE" value="codegen implementation" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
@@ -876,14 +863,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/main.cpp">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="120">
-          <caret line="8" column="0" lean-forward="false" selection-start-line="8" selection-start-column="0" selection-end-line="8" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/codegen/statements.cpp">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="337">
@@ -937,6 +916,14 @@
           <folding>
             <element signature="e#47#69#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/main.cpp">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="285">
+          <caret line="19" column="9" lean-forward="true" selection-start-line="19" selection-start-column="9" selection-end-line="19" selection-end-column="9" />
+          <folding />
         </state>
       </provider>
     </entry>

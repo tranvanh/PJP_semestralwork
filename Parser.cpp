@@ -7,7 +7,7 @@
 //Parser::Parser()
 //        : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext) {}
 
-Parser::Parser(const std::string &file_name){
+Parser::Parser(const std::string &file_name) {
 //        : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext), Lexer(file_name) {
 
     m_precedence_table[Token::tok_less] = 10;
@@ -182,10 +182,14 @@ std::unique_ptr<ASTProgram> Parser::Parse() {
     std::unique_ptr<ASTBody> main;
 
     while (true) {
-        if (m_CurrTok == tok_const || m_CurrTok == tok_var) {
-            auto var_res = m_CurrTok == tok_const ? parseConstVarDeclaration() : parseVarDeclaration();
-            for (const auto &c : var_res)
-                glob_vars.push_back(std::move(c));
+        if (m_CurrTok == tok_var) {
+            auto global_vars = parseVarDeclaration();
+            for (const auto &v : global_vars)
+                glob_vars.emplace_back(std::move(v));
+        } else if (m_CurrTok == tok_const) {
+            auto const_vars = parseConstVarDeclaration();
+            for (const auto &v : const_vars)
+                glob_vars.emplace_back(std::move(v));
         } else if (m_CurrTok == tok_function || m_CurrTok == tok_procedure)
             functs.emplace_back(parseFunction());
         else {
@@ -442,7 +446,7 @@ std::unique_ptr<ASTFor> Parser::parseForStmt() {
     bool downto;
     if (m_CurrTok == tok_to)
         downto = false;
-    else if (m_CurrTok = tok_downto)
+    else if (m_CurrTok == tok_downto)
         downto = true;
     else
         throw "Expected: 'to' or 'downto'. Recieved: " + tokenToStr(m_CurrTok) + ".";
@@ -473,7 +477,6 @@ std::unique_ptr<ASTBreak> Parser::parseBreak() {
     return std::make_unique<ASTBreak>();
 }
 
-
 std::unique_ptr<ASTExpression> Parser::parseStatement() {
     switch (m_CurrTok) {
         case tok_identifier:
@@ -485,9 +488,13 @@ std::unique_ptr<ASTExpression> Parser::parseStatement() {
         case tok_for:
             return parseForStmt();
         case tok_break:
-            return parseBreak();
+            getNextToken();
+            return std::make_unique<ASTBreak>();
         case tok_exit:
-            return parseExit();
+            getNextToken();
+            return std::make_unique<ASTBreak>();
+        default:
+            return nullptr;
     }
 }
 

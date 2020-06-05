@@ -1,47 +1,7 @@
 //
 // Created by Tomas Tran on 04/06/2020.
 //
-#include "llvm/ADT/Optional.h"
-#include "llvm/ADT/STLExtras.h"
-#include "llvm/IR/BasicBlock.h"
-#include "llvm/IR/Constants.h"
-#include "llvm/IR/DerivedTypes.h"
-#include "llvm/IR/Function.h"
-#include "llvm/IR/Instructions.h"
-#include "llvm/IR/IRBuilder.h"
-#include "llvm/IR/LLVMContext.h"
-#include "llvm/IR/LegacyPassManager.h"
-#include "llvm/IR/Module.h"
-#include "llvm/IR/Type.h"
-#include "llvm/IR/Verifier.h"
-#include "llvm/Support/FileSystem.h"
-#include "llvm/Support/Host.h"
-#include "llvm/Support/raw_ostream.h"
-#include "llvm/Support/TargetRegistry.h"
-#include "llvm/Support/TargetSelect.h"
-#include "llvm/Target/TargetMachine.h"
-#include "llvm/Target/TargetOptions.h"
-
-
-#include "../ast/data_types/ASTVariableType.hpp"
-#include "../ast/ASTProgram.hpp"
-
-using namespace llvm;
-
-static LLVMContext TheContext;
-static IRBuilder<> Builder(TheContext);
-static std::unique_ptr<llvm::Module> TheModule;
-
-typedef std::pair<Value *, std::shared_ptr<ASTVariableType>> TVarInfo;
-
-static std::map<std::string, std::pair<AllocaInst *, std::shared_ptr<ASTVariableType>>> named_values;
-static std::map<std::string, std::pair<GlobalVariable *, std::shared_ptr<ASTVariableType>>> global_vars;
-static std::map<std::string, llvm::Constant *> const_vars;
-
-static Value *decimal_specifier_character;
-static Value *string_specifier_character;
-static Value *new_line_specifier;
-
+#include "codegen.hpp"
 
 Value *ASTProgram::codegen() {
     // Printf and scanf declarations
@@ -116,11 +76,11 @@ std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
 
     // GENERATE OBJECT FILE
     // Initialize the target registry etc.
-    InitializeAllTargetInfos();
-    InitializeAllTargets();
-    InitializeAllTargetMCs();
-    InitializeAllAsmParsers();
-    InitializeAllAsmPrinters();
+    LLVMInitializeAllTargetInfos();
+    LLVMInitializeAllTargets();
+    LLVMInitializeAllTargetMCs();
+    LLVMInitializeAllAsmParsers();
+    LLVMInitializeAllAsmPrinters();
 
     auto TargetTriple = sys::getDefaultTargetTriple();
     TheModule->setTargetTriple(TargetTriple);
@@ -155,10 +115,9 @@ std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
 
     legacy::PassManager pass;
 //    auto file_type = TargetMachine::CGFT_ObjectFile;
-    auto file_type = CGFT_ObjectFile;
+    auto file_type = TargetMachine::CGFT_ObjectFile;
 
-    if (TheTargetMachine->addPassesToEmitFile(pass, (raw_pwrite_stream &) outs(),
-                                              (raw_pwrite_stream *) (&outs()), file_type)) {
+    if (TheTargetMachine -> addPassesToEmitFile(pass, dest, file_type)) {
         errs() << "TheTargetMachine can't emit a file of this type";
         return nullptr;
     }

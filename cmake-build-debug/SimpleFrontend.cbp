@@ -5,7 +5,7 @@
 		<Option title="SimpleFrontend"/>
 		<Option makefile_is_custom="1"/>
 		<Option compiler="gcc"/>
-		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\cmake\llvm\;"/>
+		<Option virtualFolders="CMake Files\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\;CMake Files\..\..\..\..\..\..\..\usr\;CMake Files\..\..\..\..\..\..\..\usr\local\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\cmake\;CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\cmake\llvm\;"/>
 		<Build>
 			<Target title="all">
 				<Option working_dir="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/cmake-build-debug"/>
@@ -44,7 +44,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/llvm/10.0.0_3/include"/>
+					<Add directory="/usr/local/Cellar/llvm@6/6.0.1_3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
@@ -66,7 +66,7 @@
 				<Option type="1"/>
 				<Option compiler="gcc"/>
 				<Compiler>
-					<Add directory="/usr/local/Cellar/llvm/10.0.0_3/include"/>
+					<Add directory="/usr/local/Cellar/llvm@6/6.0.1_3/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/bin/../include/c++/v1"/>
 					<Add directory="/usr/local/include"/>
 					<Add directory="/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/lib/clang/11.0.0/include"/>
@@ -254,6 +254,9 @@
 		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/codegen.cpp">
 			<Option target="mila"/>
 		</Unit>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/codegen.hpp">
+			<Option target="mila"/>
+		</Unit>
 		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/constants.cpp">
 			<Option target="mila"/>
 		</Unit>
@@ -281,20 +284,20 @@
 		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/CMakeLists.txt">
 			<Option virtualFolder="CMake Files\"/>
 		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVM-Config.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\cmake\llvm\"/>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVM-Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\cmake\llvm\"/>
 		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMConfig.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\cmake\llvm\"/>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\cmake\llvm\"/>
 		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMConfigVersion.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\cmake\llvm\"/>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\cmake\llvm\"/>
 		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMExports-release.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\cmake\llvm\"/>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMExports-release.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\cmake\llvm\"/>
 		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMExports.cmake">
-			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm\10.0.0_3\lib\cmake\llvm\"/>
+		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/../../../../../../../usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMExports.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\..\..\usr\local\Cellar\llvm@6\6.0.1_3\lib\cmake\llvm\"/>
 		</Unit>
 	</Project>
 </CodeBlocks_project_file>

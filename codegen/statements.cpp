@@ -2,7 +2,7 @@
 // Created by Tomas Tran on 04/06/2020.
 //
 
-#include "codegen.cpp"
+#include "codegen.hpp"
 #include "../ast/statements/ASTIf.hpp"
 #include "../ast/statements/ASTFor.hpp"
 #include "../ast/statements/ASTWhile.hpp"

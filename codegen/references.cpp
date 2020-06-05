@@ -2,7 +2,7 @@
 // Created by Tomas Tran on 04/06/2020.
 //
 
-#include "codegen.cpp"
+#include "codegen.hpp"
 #include "../ast/references/ASTSingleVarReference.hpp"
 #include "../ast/references/ASTArrayReference.hpp"
 #include "../ast/data_types/ASTArray.hpp"

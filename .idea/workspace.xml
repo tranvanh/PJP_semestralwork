@@ -13,23 +13,43 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="linker problem">
+      <change afterPath="$PROJECT_DIR$/codegen/codegen.hpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeOutput.log" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/Lexer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/Lexer.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.internal" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/link.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/main.cpp.o" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/CXX.includecache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/Lexer.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.internal" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/flags.make" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/main.cpp.o" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/body.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/body.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codegen/codegen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/codegen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/constants.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/constants.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/data_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/data_types.cpp" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/codegen/function.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/function.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/operators.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/operators.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/references.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/references.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/statements.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/statements.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/variable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/variable.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,6 +64,9 @@
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="OCFindUsagesOptions" text="true" ivars="false" properties="true" derivedClasses="false" />
+  <component name="OCResolveContextSettings">
+    <option name="configuration" value="0-Debug-mila" />
+  </component>
   <component name="ProjectId" id="1crDJmqBCFRwW7uSiBGxCNh8HWq" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -100,7 +123,19 @@
       <workItem from="1590941946898" duration="37309000" />
       <workItem from="1591201909702" duration="6271000" />
       <workItem from="1591277756593" duration="3387000" />
-      <workItem from="1591282929918" duration="821000" />
+      <workItem from="1591282929918" duration="1672000" />
+      <workItem from="1591291905291" duration="372000" />
+      <workItem from="1591292907898" duration="1317000" />
+      <workItem from="1591299809053" duration="10000" />
+      <workItem from="1591299865823" duration="67000" />
+      <workItem from="1591300069928" duration="141000" />
+      <workItem from="1591300248835" duration="187000" />
+      <workItem from="1591300496240" duration="5881000" />
+      <workItem from="1591311903182" duration="437000" />
+      <workItem from="1591312452553" duration="11000" />
+      <workItem from="1591312600528" duration="575000" />
+      <workItem from="1591313346204" duration="868000" />
+      <workItem from="1591314356651" duration="185000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -235,17 +270,15 @@
       <option name="project" value="LOCAL" />
       <updated>1591279635390</updated>
     </task>
-    <option name="localTasksCounter" value="20" />
+    <task id="LOCAL-00020" summary="linker problem">
+      <created>1591283976668</created>
+      <option name="number" value="00020" />
+      <option name="presentableId" value="LOCAL-00020" />
+      <option name="project" value="LOCAL" />
+      <updated>1591283976669</updated>
+    </task>
+    <option name="localTasksCounter" value="21" />
     <servers />
-  </component>
-  <component name="TodoView">
-    <todo-panel id="selected-file">
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
-    <todo-panel id="all">
-      <are-packages-shown value="true" />
-      <is-autoscroll-to-source value="true" />
-    </todo-panel>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="2" />
@@ -283,18 +316,18 @@
     <option name="LAST_COMMIT_MESSAGE" value="linker problem" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591279634873">
+    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591313940373">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591279634873" />
+    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591313940373" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1591283172987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1591283172987" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591279644558">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591283979382">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591279644558" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591283979382" />
     <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1591283456812">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

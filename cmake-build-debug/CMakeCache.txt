@@ -14,6 +14,18 @@
 # EXTERNAL cache entries
 ########################
 
+//The directory containing a CMake configuration file for /usr/local/Cellar/llvm@6/6.0.1_3/lib/.
+/usr/local/Cellar/llvm@6/6.0.1_3/lib/_DIR:PATH=/usr/local/Cellar/llvm@6/6.0.1_3/lib/_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for /usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm.
+/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm_DIR:PATH=/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for /usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake.
+/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake_DIR:PATH=/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake_DIR-NOTFOUND
+
+//The directory containing a CMake configuration file for /usr/local/Cellar/llvm@6/6.0.1_3.
+/usr/local/Cellar/llvm@6/6.0.1_3_DIR:PATH=/usr/local/Cellar/llvm@6/6.0.1_3_DIR-NOTFOUND
+
 //Path to a program.
 CMAKE_ADDR2LINE:FILEPATH=CMAKE_ADDR2LINE-NOTFOUND
 
@@ -221,8 +233,11 @@ CMAKE_STRIP:FILEPATH=/Applications/Xcode.app/Contents/Developer/Toolchains/Xcode
 // Studio IDE projects all commands are done without /nologo.
 CMAKE_VERBOSE_MAKEFILE:BOOL=FALSE
 
+//The directory containing a CMake configuration file for LLVM@6.
+LLVM@6_DIR:PATH=LLVM@6_DIR-NOTFOUND
+
 //The directory containing a CMake configuration file for LLVM.
-LLVM_DIR:PATH=/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm
+LLVM_DIR:PATH=/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm
 
 //Path to a program.
 ProcessorCount_cmd_sysctl:FILEPATH=/usr/sbin/sysctl

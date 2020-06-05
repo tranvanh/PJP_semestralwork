@@ -525,7 +525,7 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
 #  define ARCHITECTURE_ID
 #endif
 
-/* Convert integer to decimal digit constants.  */
+/* Convert integer to decimal digit literals.  */
 #define DEC(n)                   \
   ('0' + (((n) / 10000000)%10)), \
   ('0' + (((n) / 1000000)%10)),  \
@@ -536,7 +536,7 @@ char const *info_cray = "INFO" ":" "compiler_wrapper[CrayPrgEnv]";
   ('0' + (((n) / 10)%10)),       \
   ('0' +  ((n) % 10))
 
-/* Convert integer to hex digit constants.  */
+/* Convert integer to hex digit literals.  */
 #define HEX(n)             \
   ('0' + ((n)>>28 & 0xF)), \
   ('0' + ((n)>>24 & 0xF)), \

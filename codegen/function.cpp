@@ -2,7 +2,7 @@
 // Created by Tomas Tran on 04/06/2020.
 //
 
-#include "codegen.cpp"
+#include "codegen.hpp"
 #include "../ast/function/ASTFunctionCall.hpp"
 #include "../ast/references/ASTSingleVarReference.hpp"
 /// CreateEntryBlockAlloca - Create an alloca instruction in the entry block of

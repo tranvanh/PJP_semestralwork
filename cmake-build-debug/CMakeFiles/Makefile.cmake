@@ -37,11 +37,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "CMakeFiles/3.16.5/CMakeCCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeCXXCompiler.cmake"
   "CMakeFiles/3.16.5/CMakeSystem.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVM-Config.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMConfig.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMConfigVersion.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMExports-release.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMExports.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVM-Config.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMConfig.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMConfigVersion.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMExports-release.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMExports.cmake"
   )
 
 # The corresponding makefile is:

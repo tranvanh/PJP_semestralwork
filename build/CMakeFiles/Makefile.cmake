@@ -34,11 +34,11 @@ set(CMAKE_MAKEFILE_DEPENDS
   "/usr/local/Cellar/cmake/3.17.3/share/cmake/Modules/Platform/Darwin-Initialize.cmake"
   "/usr/local/Cellar/cmake/3.17.3/share/cmake/Modules/Platform/Darwin.cmake"
   "/usr/local/Cellar/cmake/3.17.3/share/cmake/Modules/Platform/UnixPaths.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVM-Config.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMConfig.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMConfigVersion.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMExports-release.cmake"
-  "/usr/local/Cellar/llvm/10.0.0_3/lib/cmake/llvm/LLVMExports.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVM-Config.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMConfig.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMConfigVersion.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMExports-release.cmake"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake/llvm/LLVMExports.cmake"
   )
 
 # The corresponding makefile is:

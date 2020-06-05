@@ -45,7 +45,7 @@ set(CMAKE_CXX_COMPILER_ID "AppleClang")
 
 # The include file search paths:
 set(CMAKE_CXX_TARGET_INCLUDE_PATH
-  "/usr/local/Cellar/llvm/10.0.0_3/include"
+  "/usr/local/Cellar/llvm@6/6.0.1_3/include"
   )
 
 # Targets to which this target links.

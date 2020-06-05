@@ -12,7 +12,7 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="include hirearchy">
+    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="parser fix">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
     </list>
@@ -101,7 +101,7 @@
       <workItem from="1591312600528" duration="575000" />
       <workItem from="1591313346204" duration="868000" />
       <workItem from="1591314356651" duration="185000" />
-      <workItem from="1591315798171" duration="9634000" />
+      <workItem from="1591315798171" duration="10471000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -278,7 +278,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591381355572</updated>
     </task>
-    <option name="localTasksCounter" value="26" />
+    <task id="LOCAL-00026" summary="parser fix">
+      <created>1591388576481</created>
+      <option name="number" value="00026" />
+      <option name="presentableId" value="LOCAL-00026" />
+      <option name="project" value="LOCAL" />
+      <updated>1591388576481</updated>
+    </task>
+    <option name="localTasksCounter" value="27" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -319,7 +326,8 @@
     <MESSAGE value="minor changes" />
     <MESSAGE value="m_Lexer init" />
     <MESSAGE value="include hirearchy" />
-    <option name="LAST_COMMIT_MESSAGE" value="include hirearchy" />
+    <MESSAGE value="parser fix" />
+    <option name="LAST_COMMIT_MESSAGE" value="parser fix" />
   </component>
   <component name="WindowStateProjectService">
     <state x="417" y="186" key="#Build_All" timestamp="1591376255516">
@@ -334,10 +342,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="162" key="#com.intellij.ide.macro.MacrosDialog/0.0.1440.900@0.0.1440.900" timestamp="1591376245697" />
-    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591381355343">
+    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591388576328">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591381355343" />
+    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591388576328" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1591283172987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

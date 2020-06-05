@@ -8,7 +8,6 @@
 //        : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext) {}
 
 Parser::Parser(const std::string &file_name) : m_Lexer(file_name) {
-//        : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext), Lexer(file_name) {
 
     m_precedence_table[Token::tok_less] = 10;
     m_precedence_table[Token::tok_lessEqual] = 10;

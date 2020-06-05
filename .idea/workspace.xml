@@ -12,20 +12,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="m_Lexer init">
+    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="include hirearchy">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/body.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/body.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/codegen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/codegen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/codegen.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/codegen.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/constants.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/constants.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/data_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/data_types.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/function.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/function.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/operators.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/operators.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/references.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/references.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/statements.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/statements.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/variable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/variable.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -112,7 +101,7 @@
       <workItem from="1591312600528" duration="575000" />
       <workItem from="1591313346204" duration="868000" />
       <workItem from="1591314356651" duration="185000" />
-      <workItem from="1591315798171" duration="6741000" />
+      <workItem from="1591315798171" duration="9634000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -282,7 +271,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591379199781</updated>
     </task>
-    <option name="localTasksCounter" value="25" />
+    <task id="LOCAL-00025" summary="include hirearchy">
+      <created>1591381355572</created>
+      <option name="number" value="00025" />
+      <option name="presentableId" value="LOCAL-00025" />
+      <option name="project" value="LOCAL" />
+      <updated>1591381355572</updated>
+    </task>
+    <option name="localTasksCounter" value="26" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -322,7 +318,8 @@
     <MESSAGE value="CMakeLists exchanges" />
     <MESSAGE value="minor changes" />
     <MESSAGE value="m_Lexer init" />
-    <option name="LAST_COMMIT_MESSAGE" value="m_Lexer init" />
+    <MESSAGE value="include hirearchy" />
+    <option name="LAST_COMMIT_MESSAGE" value="include hirearchy" />
   </component>
   <component name="WindowStateProjectService">
     <state x="417" y="186" key="#Build_All" timestamp="1591376255516">
@@ -337,10 +334,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="162" key="#com.intellij.ide.macro.MacrosDialog/0.0.1440.900@0.0.1440.900" timestamp="1591376245697" />
-    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591379199595">
+    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591381355343">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591379199595" />
+    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591381355343" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1591283172987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

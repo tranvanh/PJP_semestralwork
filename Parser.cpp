@@ -7,7 +7,7 @@
 //Parser::Parser()
 //        : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext) {}
 
-Parser::Parser(const std::string &file_name): m_Lexer(file_name) {
+Parser::Parser(const std::string &file_name) : m_Lexer(file_name) {
 //        : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext), Lexer(file_name) {
 
     m_precedence_table[Token::tok_less] = 10;
@@ -144,8 +144,9 @@ static std::string tokenToStr(Token tok) {
 bool Parser::validateToken(Token tok) {
     if (m_CurrTok == tok)
         return true;
-
-    throw "Expect: '" + tokenToStr(tok) + "'. Received: '" + tokenToStr(m_CurrTok) + "'.";
+    std::string msg("Expect: '" + tokenToStr(tok) + "'. Received: '" + tokenToStr(m_CurrTok) + "'.");
+    throw msg.c_str();
+    return false;
 }
 
 int Parser::getPrecedence() {
@@ -270,15 +271,17 @@ std::unique_ptr<ASTNumber> Parser::parseNumberExpr() {
     }
 
     validateToken(tok_number);
+    auto res = std::make_unique<ASTNumber>(sign * m_Lexer.numVal());
     getNextToken();
 
-    return std::make_unique<ASTNumber>(sign * m_Lexer.numVal());
+    return res;
 }
 
 std::unique_ptr<ASTString> Parser::parseStringExpr() {
     validateToken(tok_string);
+    auto res = std::make_unique<ASTString>(m_Lexer.strVal());
     getNextToken();
-    return std::make_unique<ASTString>(m_Lexer.strVal());
+    return res;
 }
 
 /**
@@ -311,7 +314,7 @@ std::unique_ptr<ASTExpression> Parser::parsePrimaryExpr() {
         case tok_leftParenthesis:
             return parseParenthesisExpr();
         default:
-            throw ("Primary expression beginning with unexpected token");
+            throw "Primary expression beginning with unexpected token";
     }
 }
 
@@ -434,8 +437,8 @@ std::unique_ptr<ASTFor> Parser::parseForStmt() {
     getNextToken();
 
     validateToken(tok_identifier);
-    getNextToken();
     std::string ctrl_var = m_Lexer.identifierStr();
+    getNextToken();
 
     validateToken(tok_assign);
     getNextToken();
@@ -566,6 +569,7 @@ std::shared_ptr<ASTVariableType> Parser::parseVarType() {
         auto upper = parseNumberExpr();
 
         validateToken(tok_rightBracket);
+        getNextToken();
         validateToken(tok_of);
         getNextToken();
 
@@ -588,7 +592,7 @@ std::vector<std::unique_ptr<ASTVariable>> Parser::parseVarDeclaration() {
         std::vector<std::string> var_name;
 
         getNextToken();
-
+        var_name.push_back(m_Lexer.identifierStr());
         while (m_CurrTok == tok_comma) {
             getNextToken();
             validateToken(tok_identifier);
@@ -637,8 +641,7 @@ std::vector<std::unique_ptr<ASTConstVariable>> Parser::parseConstVarDeclaration(
         getNextToken();
     } while (m_CurrTok == tok_identifier);
 
-
-    return std::vector<std::unique_ptr<ASTConstVariable>>();
+    return res;
 }
 
 //Function
@@ -650,7 +653,7 @@ std::unique_ptr<ASTFunctionPrototype> Parser::parseFunctionPrototype() {
 
     if (m_CurrTok != tok_function && m_CurrTok != tok_procedure)
         return nullptr;
-    bool is_funct = m_CurrTok == tok_function ? true : false; // else proccedure, no return type
+    bool is_funct = m_CurrTok == tok_function; // else proccedure, no return type
     getNextToken();
 
     validateToken(tok_identifier);
@@ -668,6 +671,7 @@ std::unique_ptr<ASTFunctionPrototype> Parser::parseFunctionPrototype() {
         getNextToken();
 
         validateToken(tok_colon);
+        getNextToken();
         auto type = parseVarType();
 
         params.push_back(std::make_unique<ASTVariable>(param_name, type));

@@ -12,44 +12,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="linker problem">
-      <change afterPath="$PROJECT_DIR$/codegen/codegen.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="successful build, added header for linker duplicity">
       <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdC/CMakeCCompilerId.c" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/3.17.3/CompilerIdCXX/CMakeCXXCompilerId.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/CMakeOutput.log" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/Lexer.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/Lexer.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/main.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/build/CMakeFiles/mila.dir/main.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/build/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/build/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/flags.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/body.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/body.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/codegen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/codegen.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/constants.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/constants.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/data_types.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/data_types.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/function.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/function.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/operators.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/operators.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/references.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/references.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/statements.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/statements.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/variable.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/variable.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -136,6 +101,7 @@
       <workItem from="1591312600528" duration="575000" />
       <workItem from="1591313346204" duration="868000" />
       <workItem from="1591314356651" duration="185000" />
+      <workItem from="1591315798171" duration="297000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -277,7 +243,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591283976669</updated>
     </task>
-    <option name="localTasksCounter" value="21" />
+    <task id="LOCAL-00021" summary="successful build, added header for linker duplicity">
+      <created>1591315988905</created>
+      <option name="number" value="00021" />
+      <option name="presentableId" value="LOCAL-00021" />
+      <option name="project" value="LOCAL" />
+      <updated>1591315988905</updated>
+    </task>
+    <option name="localTasksCounter" value="22" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -313,7 +286,8 @@
     <MESSAGE value="complete implementation" />
     <MESSAGE value="minor fixes, not buildable" />
     <MESSAGE value="linker problem" />
-    <option name="LAST_COMMIT_MESSAGE" value="linker problem" />
+    <MESSAGE value="successful build, added header for linker duplicity" />
+    <option name="LAST_COMMIT_MESSAGE" value="successful build, added header for linker duplicity" />
   </component>
   <component name="WindowStateProjectService">
     <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591313940373">

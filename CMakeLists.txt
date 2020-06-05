@@ -6,7 +6,6 @@ set(CMAKE_CXX_FLAGS "-Wall")
 set(CMAKE_EXPORT_COMPILE_COMMANDS ON)
 set(CMAKE_C_COMPILER clang)
 set(CMAKE_CXX_COMPILER g++)
-set(LLVM_DIR "/usr/local/Cellar/llvm@6/6.0.1_3/lib/cmake")
 
 find_package(LLVM REQUIRED CONFIG)
 

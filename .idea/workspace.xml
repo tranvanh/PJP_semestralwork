@@ -12,12 +12,11 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="CMakeLists exchanges">
+    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="minor changes">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.hpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/codegen/codegen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/codegen.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/main.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/main.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/mila" beforeDir="false" afterPath="$PROJECT_DIR$/mila" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -104,7 +103,7 @@
       <workItem from="1591312600528" duration="575000" />
       <workItem from="1591313346204" duration="868000" />
       <workItem from="1591314356651" duration="185000" />
-      <workItem from="1591315798171" duration="1894000" />
+      <workItem from="1591315798171" duration="5152000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -260,7 +259,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591316116333</updated>
     </task>
-    <option name="localTasksCounter" value="23" />
+    <task id="LOCAL-00023" summary="minor changes">
+      <created>1591349935393</created>
+      <option name="number" value="00023" />
+      <option name="presentableId" value="LOCAL-00023" />
+      <option name="project" value="LOCAL" />
+      <updated>1591349935393</updated>
+    </task>
+    <option name="localTasksCounter" value="24" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -298,21 +304,34 @@
     <MESSAGE value="linker problem" />
     <MESSAGE value="successful build, added header for linker duplicity" />
     <MESSAGE value="CMakeLists exchanges" />
-    <option name="LAST_COMMIT_MESSAGE" value="CMakeLists exchanges" />
+    <MESSAGE value="minor changes" />
+    <option name="LAST_COMMIT_MESSAGE" value="minor changes" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591316116135">
+    <state x="417" y="186" key="#Build_All" timestamp="1591376255516">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591316116135" />
+    <state x="417" y="186" key="#Build_All/0.0.1440.900@0.0.1440.900" timestamp="1591376255516" />
+    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591374700025">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1591374700025" />
+    <state x="507" y="162" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1591376245697">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="507" y="162" key="#com.intellij.ide.macro.MacrosDialog/0.0.1440.900@0.0.1440.900" timestamp="1591376245697" />
+    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591349935164">
+      <screen x="0" y="0" width="1440" height="900" />
+    </state>
+    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591349935164" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1591283172987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1591283172987" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591316117825">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591349937795">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591316117825" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591349937795" />
     <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1591283456812">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

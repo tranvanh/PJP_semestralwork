@@ -68,6 +68,7 @@ fi
 #echo "verbose: $v, force: $f, debug: $d, in: $1, out: $outFile"
 
 InputFileName=$(realpath "$1");
+echo "test $InputFileName";
 OutputFileName=$(realpath "$outFile");
 OutputFileBaseName="${OutputFileName%%.*}"
 
@@ -75,4 +76,4 @@ rm -f "$OutputFileBaseName.ir"
 > "$OutputFileBaseName.ir" < "$InputFileName" ${DIR}/build/mila &&
 rm -f "$OutputFileBaseName.s"
 llc "$OutputFileBaseName.ir" -o "$OutputFileBaseName.s" &&
-clang "$OutputFileBaseName.s" "${DIR}/fce.c" -o "$OutputFileName"
+clang++ "$OutputFileBaseName.s" "${DIR}/fce.c" -o "$OutputFileName"

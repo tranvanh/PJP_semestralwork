@@ -4,25 +4,30 @@
 
 int main(int argc, char *argv[]) {
 
-    std::string input_file;
     std::string output_file = "output.o";
 
     if(argc != 2){
         printf("Usage: %s <input_file>\n", argv[0]);
         return 2;
     }
+    std::string input_file;
 
-    input_file = argv[1];
+    try{
+        input_file = argv[1];
+    }
+    catch(...) {
+        printf("posranej exc");
+//        printf("%s\n");
+    }
 
-
-    Parser parser(input_file);
-
+    printf("");
     try {
+        Parser parser(input_file);
         std::unique_ptr<ASTProgram> parsed_program(parser.Parse());
         parsed_program -> runCodegen(output_file);
-    } catch (const char *exception) {
+    } catch (...) {
         printf("Error while compiling %s\n", input_file.c_str());
-        printf("%s\n", exception);
+//        printf("%s\n", exception);
         return 2;
     }
 

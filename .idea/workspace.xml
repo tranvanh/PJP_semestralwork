@@ -12,9 +12,12 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="successful build, added header for linker duplicity">
-      <change beforePath="$PROJECT_DIR$/CMakeLists.txt" beforeDir="false" afterPath="$PROJECT_DIR$/CMakeLists.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/clion-log.txt" afterDir="false" />
+    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="CMakeLists exchanges">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.cpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.hpp" beforeDir="false" afterPath="$PROJECT_DIR$/ast/function/ASTFunctionPrototype.hpp" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/codegen/codegen.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/codegen/codegen.cpp" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -101,7 +104,7 @@
       <workItem from="1591312600528" duration="575000" />
       <workItem from="1591313346204" duration="868000" />
       <workItem from="1591314356651" duration="185000" />
-      <workItem from="1591315798171" duration="297000" />
+      <workItem from="1591315798171" duration="1894000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -250,7 +253,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591315988905</updated>
     </task>
-    <option name="localTasksCounter" value="22" />
+    <task id="LOCAL-00022" summary="CMakeLists exchanges">
+      <created>1591316116333</created>
+      <option name="number" value="00022" />
+      <option name="presentableId" value="LOCAL-00022" />
+      <option name="project" value="LOCAL" />
+      <updated>1591316116333</updated>
+    </task>
+    <option name="localTasksCounter" value="23" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -287,21 +297,22 @@
     <MESSAGE value="minor fixes, not buildable" />
     <MESSAGE value="linker problem" />
     <MESSAGE value="successful build, added header for linker duplicity" />
-    <option name="LAST_COMMIT_MESSAGE" value="successful build, added header for linker duplicity" />
+    <MESSAGE value="CMakeLists exchanges" />
+    <option name="LAST_COMMIT_MESSAGE" value="CMakeLists exchanges" />
   </component>
   <component name="WindowStateProjectService">
-    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591313940373">
+    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591316116135">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591313940373" />
+    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591316116135" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1591283172987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1591283172987" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591283979382">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591316117825">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591283979382" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591316117825" />
     <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1591283456812">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

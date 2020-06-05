@@ -76,11 +76,11 @@ std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
 
     // GENERATE OBJECT FILE
     // Initialize the target registry etc.
-    LLVMInitializeAllTargetInfos();
-    LLVMInitializeAllTargets();
-    LLVMInitializeAllTargetMCs();
-    LLVMInitializeAllAsmParsers();
-    LLVMInitializeAllAsmPrinters();
+    InitializeAllTargetInfos();
+    InitializeAllTargets();
+    InitializeAllTargetMCs();
+    InitializeAllAsmParsers();
+    InitializeAllAsmPrinters();
 
     auto TargetTriple = sys::getDefaultTargetTriple();
     TheModule->setTargetTriple(TargetTriple);
@@ -114,10 +114,12 @@ std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
     }
 
     legacy::PassManager pass;
-//    auto file_type = TargetMachine::CGFT_ObjectFile;
+//    auto file_type = CGFT_ObjectFile;
     auto file_type = TargetMachine::CGFT_ObjectFile;
 
     if (TheTargetMachine -> addPassesToEmitFile(pass, dest, file_type)) {
+//    if (TheTargetMachine->addPassesToEmitFile(pass, (raw_pwrite_stream &) outs(),
+//                                              (raw_pwrite_stream * )(&outs()), file_type)) {
         errs() << "TheTargetMachine can't emit a file of this type";
         return nullptr;
     }

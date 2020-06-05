@@ -18,8 +18,8 @@ public:
 
     const std::string &getName() const;
 
-    std::shared_ptr<ASTVariableType> m_ReturnType;
     std::vector<std::unique_ptr<ASTVariable>> m_Parameters;
+    std::shared_ptr<ASTVariableType> m_ReturnType;
 private:
     std::string m_Name;
 };

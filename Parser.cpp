@@ -294,7 +294,8 @@ std::unique_ptr<ASTExpression> Parser::parseParenthesisExpr() {
     validateToken(tok_rightParenthesis);
     getNextToken();
 
-    return std::move(res);
+    return res;
+//    return std::move(res);
 }
 
 std::unique_ptr<ASTExpression> Parser::parsePrimaryExpr() {
@@ -517,7 +518,7 @@ std::unique_ptr<ASTAssignOperator> Parser::parseAssign(const std::string &var_na
     std::unique_ptr<ASTReference> var_ref = nullptr;
 
     if (m_CurrTok == tok_leftBracket)
-        var_ref = std::move(parseArrayReference(var_name));
+        var_ref = parseArrayReference(var_name);
     else
         var_ref = std::make_unique<ASTSingleVarReference>(var_name);
 

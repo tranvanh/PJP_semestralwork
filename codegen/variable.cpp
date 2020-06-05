@@ -2,7 +2,6 @@
 // Created by Tomas Tran on 04/06/2020.
 //
 #include "codegen.hpp"
-#include "../ast/variable/ASTConstVariable.hpp"
 
 Value *ASTVariable::codegen() {
     auto type_value = m_Type->codegen();

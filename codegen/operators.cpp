@@ -3,8 +3,6 @@
 //
 
 #include "codegen.hpp"
-#include "../ast/operators/ASTBinaryOperator.hpp"
-#include "../ast/operators/ASTAssignOperator.hpp"
 
 Value * ASTAssignOperator::codegen ()
 {

@@ -3,8 +3,6 @@
 //
 
 #include "codegen.hpp"
-#include "../ast/data_types/ASTInteger.hpp"
-#include "../ast/data_types/ASTArray.hpp"
 
 Type *ASTInteger::codegen() {
     return Type::getInt32Ty(TheContext);

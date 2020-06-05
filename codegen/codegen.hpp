@@ -30,6 +30,21 @@
 #include "codegen.hpp"
 #include "../ast/data_types/ASTVariableType.hpp"
 #include "../ast/ASTProgram.hpp"
+#include "../ast/variable/ASTConstVariable.hpp"
+#include "../ast/statements/ASTExit.hpp"
+#include "../ast/statements/ASTBreak.hpp"
+#include "../ast/statements/ASTWhile.hpp"
+#include "../ast/statements/ASTFor.hpp"
+#include "../ast/statements/ASTIf.hpp"
+#include "../ast/references/ASTArrayReference.hpp"
+#include "../ast/references/ASTSingleVarReference.hpp"
+#include "../ast/operators/ASTBinaryOperator.hpp"
+#include "../ast/operators/ASTAssignOperator.hpp"
+#include "../ast/function/ASTFunctionCall.hpp"
+#include "../ast/data_types/ASTArray.hpp"
+#include "../ast/data_types/ASTInteger.hpp"
+#include "../ast/constants/ASTString.hpp"
+#include "../ast/constants/ASTNumber.hpp"
 
 using namespace llvm;
 

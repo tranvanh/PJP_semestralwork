@@ -3,8 +3,6 @@
 //
 
 #include "codegen.hpp"
-#include "../ast/function/ASTFunctionCall.hpp"
-#include "../ast/references/ASTSingleVarReference.hpp"
 /// CreateEntryBlockAlloca - Create an alloca instruction in the entry block of
 /// the function.  This is used for mutable variables etc.
 static AllocaInst * CreateEntryBlockAlloca(Function *TheFunction, const std::string &VarName, Type * type)

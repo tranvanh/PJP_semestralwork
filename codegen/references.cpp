@@ -3,9 +3,6 @@
 //
 
 #include "codegen.hpp"
-#include "../ast/references/ASTSingleVarReference.hpp"
-#include "../ast/references/ASTArrayReference.hpp"
-#include "../ast/data_types/ASTArray.hpp"
 
 // Get variable value from stack
 Value * ASTSingleVarReference::codegen ()
@@ -16,9 +13,9 @@ Value * ASTSingleVarReference::codegen ()
     // Search for var
     TVarInfo info;
 
-    if ( named_values.find(m_Name) != named_values.cend() )
+    if ( named_values.find(m_Name) != named_values.end() )
         info = named_values[m_Name];
-    else if ( global_vars.find(m_Name) != global_vars.cend() )
+    else if ( global_vars.find(m_Name) != global_vars.end() )
         info = global_vars[m_Name];
     else
         throw "Using an undeclared variable";

@@ -3,11 +3,6 @@
 //
 
 #include "codegen.hpp"
-#include "../ast/statements/ASTIf.hpp"
-#include "../ast/statements/ASTFor.hpp"
-#include "../ast/statements/ASTWhile.hpp"
-#include "../ast/statements/ASTBreak.hpp"
-#include "../ast/statements/ASTExit.hpp"
 
 Value *ASTIf::codegen() {
     Value *condition_value = m_Condition->codegen();

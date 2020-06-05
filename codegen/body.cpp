@@ -3,7 +3,6 @@
 //
 
 #include "codegen.hpp"
-#include "../ast/ASTBody.hpp"
 
 Value *ASTBody::codegen() {
     for (auto &statement : m_Content)

@@ -12,35 +12,9 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="changed file hirearchy codegen, static with header is a no no">
+    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="test script, fixed parser">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Parser.cpp" beforeDir="false" afterPath="$PROJECT_DIR$/Parser.cpp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/CXX.includecache" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/CXX.includecache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/DependInfo.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/Parser.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/Parser.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/cmake_clean.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/cmake_clean.cmake" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/body.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/codegen.cpp.o" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/codegen.cpp.o" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/constants.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/data_types.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/function.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/operators.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/references.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/statements.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/codegen/variable.cpp.o" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.internal" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.internal" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/depend.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/link.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/progress.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/progress.make" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/progress.marks" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/SimpleFrontend.cbp" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/cmake-build-debug/mila" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/mila" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/mila" beforeDir="false" afterPath="$PROJECT_DIR$/mila" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/test" beforeDir="false" afterPath="$PROJECT_DIR$/test" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
@@ -128,7 +102,7 @@
       <workItem from="1591312600528" duration="575000" />
       <workItem from="1591313346204" duration="868000" />
       <workItem from="1591314356651" duration="185000" />
-      <workItem from="1591315798171" duration="22897000" />
+      <workItem from="1591315798171" duration="24628000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -333,7 +307,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591451776305</updated>
     </task>
-    <option name="localTasksCounter" value="30" />
+    <task id="LOCAL-00030" summary="test script, fixed parser">
+      <created>1591462719815</created>
+      <option name="number" value="00030" />
+      <option name="presentableId" value="LOCAL-00030" />
+      <option name="project" value="LOCAL" />
+      <updated>1591462719815</updated>
+    </task>
+    <option name="localTasksCounter" value="31" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -352,7 +333,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="AST *.cpp implementation + minor fixes" />
     <MESSAGE value="Parser header + token validation" />
     <MESSAGE value="GetToken, change return type" />
     <MESSAGE value="parse expression implementation + number, string, parenthesis" />
@@ -377,7 +357,8 @@
     <MESSAGE value="final fixes" />
     <MESSAGE value="add cmake debug folder, not parsing correctly" />
     <MESSAGE value="changed file hirearchy codegen, static with header is a no no" />
-    <option name="LAST_COMMIT_MESSAGE" value="changed file hirearchy codegen, static with header is a no no" />
+    <MESSAGE value="test script, fixed parser" />
+    <option name="LAST_COMMIT_MESSAGE" value="test script, fixed parser" />
   </component>
   <component name="WindowStateProjectService">
     <state x="417" y="186" key="#Build_All" timestamp="1591447624534">
@@ -396,14 +377,14 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="507" y="162" key="#com.intellij.ide.macro.MacrosDialog/0.0.1440.900@0.0.1440.900" timestamp="1591376245697" />
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591451376030">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1591462643954">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1591451376030" />
-    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591451769538">
+    <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1591462643954" />
+    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591462718127">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591451769538" />
+    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591462718127" />
     <state width="1398" height="316" key="GridCell.Tab.0.bottom" timestamp="1591462284788">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

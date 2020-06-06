@@ -1,6 +1,5 @@
 #!/bin/bash
 cd samples
-#echo "$("../cmake-build-debug/mila" "arrayMax.mila")"
 
 for i in *.mila ; do
   j="${i%%.*}"

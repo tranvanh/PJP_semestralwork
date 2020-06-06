@@ -220,6 +220,7 @@ Token Parser::getNextToken() {
 std::unique_ptr<ASTExpression> Parser::parseFunctionCall(const std::string &name) {
 
     std::vector<std::unique_ptr<ASTExpression>> args;
+    validateToken(tok_leftParenthesis);
     getNextToken();
 
     while (m_CurrTok != tok_rightParenthesis) {
@@ -247,10 +248,14 @@ std::unique_ptr<ASTExpression> Parser::parseIdentifierExpr() {
 
     if (m_CurrTok == tok_leftParenthesis)
         return parseFunctionCall(identifier_str);
-    if (m_CurrTok == tok_leftBracket)
-        return parseArrayReference(identifier_str);
 
-    auto var_ref = std::make_unique<ASTSingleVarReference>(identifier_str);
+    std::unique_ptr<ASTReference> var_ref = nullptr;
+
+    if (m_CurrTok == tok_leftBracket)
+        var_ref = parseArrayReference(identifier_str);
+    else
+        var_ref = std::make_unique<ASTSingleVarReference>(identifier_str);
+
     if (m_CurrTok == tok_assign)
         return parseAssign(std::move(var_ref));
 
@@ -524,7 +529,9 @@ std::unique_ptr<ASTAssignOperator> Parser::parseAssign(const std::string &var_na
     else
         var_ref = std::make_unique<ASTSingleVarReference>(var_name);
 
-    return parseAssign(std::move(var_ref));
+    validateToken(tok_assign);
+    getNextToken();
+    return std::make_unique<ASTAssignOperator>(std::move(var_ref), parseExpression());
 }
 
 /**
@@ -590,8 +597,8 @@ std::vector<std::unique_ptr<ASTVariable>> Parser::parseVarDeclaration() {
         std::vector<std::unique_ptr<ASTVariable>> res;
         std::vector<std::string> var_name;
 
-        getNextToken();
         var_name.push_back(m_Lexer.identifierStr());
+        getNextToken();
         while (m_CurrTok == tok_comma) {
             getNextToken();
             validateToken(tok_identifier);

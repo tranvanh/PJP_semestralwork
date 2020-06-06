@@ -1,7 +1,11 @@
 #!/bin/bash
 cd samples
+#echo "$("../cmake-build-debug/mila" "arrayMax.mila")"
+
 for i in *.mila ; do
   j="${i%%.*}"
-  echo ../mila "$i" -o "$j"
-  ../mila "$i" -o "$j"
+  echo "$("../cmake-build-debug/mila" $i)" > /dev/null
+  clang++ "./output.o" -o "$j"
+  echo "../cmake-build-debug/mila" "$i" -o "$j"
 done
+rm -f output.o

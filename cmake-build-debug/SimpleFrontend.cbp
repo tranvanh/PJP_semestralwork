@@ -248,34 +248,7 @@
 		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/ast/variable/ASTVariableDef.hpp">
 			<Option target="mila"/>
 		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/body.cpp">
-			<Option target="mila"/>
-		</Unit>
 		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/codegen.cpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/codegen.hpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/constants.cpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/data_types.cpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/function.cpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/operators.cpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/references.cpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/statements.cpp">
-			<Option target="mila"/>
-		</Unit>
-		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/codegen/variable.cpp">
 			<Option target="mila"/>
 		</Unit>
 		<Unit filename="/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/main.cpp">

@@ -1116,8 +1116,6 @@ CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o: /usr/local/Cellar/llvm@6/
 CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm/Support/SwapByteOrder.h
 CMakeFiles/mila.dir/ast/variable/ASTVariableDef.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm/Support/type_traits.h
 
-CMakeFiles/mila.dir/codegen/body.cpp.o: ../codegen/body.cpp
-
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../Lexer.hpp
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../ast/ASTBody.hpp
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../ast/ASTExpression.hpp
@@ -1144,7 +1142,6 @@ CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../ast/variable/ASTConstVariable.hpp
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../ast/variable/ASTVariable.hpp
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../ast/variable/ASTVariableDef.hpp
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../codegen/codegen.cpp
-CMakeFiles/mila.dir/codegen/codegen.cpp.o: ../codegen/codegen.hpp
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm-c/Disassembler.h
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm-c/Target.h
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm-c/Types.h
@@ -1277,20 +1274,6 @@ CMakeFiles/mila.dir/codegen/codegen.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/incl
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm/Support/type_traits.h
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm/Target/TargetMachine.h
 CMakeFiles/mila.dir/codegen/codegen.cpp.o: /usr/local/Cellar/llvm@6/6.0.1_3/include/llvm/Target/TargetOptions.h
-
-CMakeFiles/mila.dir/codegen/constants.cpp.o: ../codegen/constants.cpp
-
-CMakeFiles/mila.dir/codegen/data_types.cpp.o: ../codegen/data_types.cpp
-
-CMakeFiles/mila.dir/codegen/function.cpp.o: ../codegen/function.cpp
-
-CMakeFiles/mila.dir/codegen/operators.cpp.o: ../codegen/operators.cpp
-
-CMakeFiles/mila.dir/codegen/references.cpp.o: ../codegen/references.cpp
-
-CMakeFiles/mila.dir/codegen/statements.cpp.o: ../codegen/statements.cpp
-
-CMakeFiles/mila.dir/codegen/variable.cpp.o: ../codegen/variable.cpp
 
 CMakeFiles/mila.dir/main.cpp.o: ../Lexer.hpp
 CMakeFiles/mila.dir/main.cpp.o: ../Parser.hpp

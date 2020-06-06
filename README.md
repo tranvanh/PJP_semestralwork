@@ -27,7 +27,7 @@ make
 ```
 ./test
 ```
-all shell executable files will be saved in "./sample" directory
+all shell executable files will be saved in "./samples" directory
 
 **Compile single file**
 ```

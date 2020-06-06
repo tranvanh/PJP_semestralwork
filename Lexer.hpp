@@ -5,7 +5,6 @@
 #include <fstream>
 #include <map>
 
-//TODO zkontrolovat s progtest souborem
 
 /*
  * Lexer returns tokens [0-255] if it is an unknown character,
@@ -94,7 +93,7 @@ enum Token {
 
 class Lexer {
 public:
-    Lexer() = default;
+//    Lexer() = default;
 
     Lexer(const std::string &input_file);
 
@@ -114,22 +113,32 @@ private:
     int m_NumVal;                // tok_number
     std::string m_StrVal;
     std::map<std::string, Token> key_words{
-            {"begin",     tok_begin},
-            {"end",       tok_end},
-            {"const",     tok_const},
+            {"program", tok_program},
+            {"const", tok_const},
+            {"var", tok_var},
+            {"begin", tok_begin},
+            {"end", tok_end},
+            {"div", tok_div},
+            {"mod", tok_mod},
+            {"integer", tok_integer},
+            {"array", tok_array},
+            {"of", tok_of},
+            {"if", tok_if},
+            {"then", tok_then},
+            {"else", tok_else},
+            {"while", tok_while},
+            {"do", tok_do},
+            {"for", tok_for},
+            {"to", tok_to},
+            {"downto", tok_downto},
+            {"or", tok_or},
+            {"and", tok_and},
+
             {"procedure", tok_procedure},
-            {"forward",   tok_forward},
-            {"function",  tok_function},
-            {"if",        tok_if},
-            {"then",      tok_then},
-            {"else",      tok_else},
-            {"program",   tok_program},
-            {"while",     tok_while},
-            {"exit",      tok_exit},
-            {"var",       tok_var},
-            {"integer",   tok_integer},
-            {"for",       tok_for},
-            {"do",        tok_do}
+            {"function", tok_function},
+            {"forward", tok_forward},
+            {"break", tok_break},
+            {"exit", tok_exit},
     };
 };
 

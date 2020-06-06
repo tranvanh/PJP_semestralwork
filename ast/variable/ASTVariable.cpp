@@ -6,4 +6,4 @@
 
 ASTVariable::ASTVariable(const std::string &name,
                          std::shared_ptr<ASTVariableType> type)
-        : m_Name(name), m_Type(std::move(type)) {}
+        : m_Name(name), m_Type(type) {}

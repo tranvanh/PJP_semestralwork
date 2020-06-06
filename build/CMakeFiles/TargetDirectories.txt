@@ -1,4 +1,0 @@
-/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/build/CMakeFiles/rebuild_cache.dir
-/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/build/CMakeFiles/edit_cache.dir
-/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/build/CMakeFiles/mila.dir
-/Users/tranvanh/Desktop/FIT/19-20/pjp/PJP_semestralwork/build/CMakeFiles/intrinsics_gen.dir

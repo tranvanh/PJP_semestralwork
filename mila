@@ -1,6 +1,5 @@
 #!/bin/bash
 DIR="$( cd "$( dirname "${BASH_SOURCE[0]}" )" >/dev/null 2>&1 && pwd )"
-
 # saner programming env: these switches turn some bugs into errors
 set -o errexit -o pipefail -o noclobber -o nounset
 
@@ -68,12 +67,10 @@ fi
 #echo "verbose: $v, force: $f, debug: $d, in: $1, out: $outFile"
 
 InputFileName=$(realpath "$1");
-echo "test $InputFileName";
-OutputFileName=$(realpath "$outFile");
+OutputFileName=$(realpath $outFile);
 OutputFileBaseName="${OutputFileName%%.*}"
-
 rm -f "$OutputFileBaseName.ir"
-> "$OutputFileBaseName.ir" < "$InputFileName" ${DIR}/build/mila &&
+> "$OutputFileBaseName.ir" < "$InputFileName" "$MilaProg" &&
 rm -f "$OutputFileBaseName.s"
 llc "$OutputFileBaseName.ir" -o "$OutputFileBaseName.s" &&
 clang++ "$OutputFileBaseName.s" "${DIR}/fce.c" -o "$OutputFileName"

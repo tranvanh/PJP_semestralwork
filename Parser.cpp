@@ -4,9 +4,6 @@
 #include "ast/data_types/ASTInteger.hpp"
 #include "ast/data_types/ASTArray.hpp"
 
-//Parser::Parser()
-//        : MilaContext(), MilaBuilder(MilaContext), MilaModule("mila", MilaContext) {}
-
 Parser::Parser(const std::string &file_name) : m_Lexer(file_name) {
 
     m_precedence_table[Token::tok_less] = 10;

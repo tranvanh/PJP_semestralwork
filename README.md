@@ -23,10 +23,12 @@ make
 ##RUN
 
 **Compile all sample files**
-all shell executable files will be saved in "sample" directory
+
 ```
 ./test
 ```
+all shell executable files will be saved in "./sample" directory
+
 **Compile single file**
 ```
 ./cmake-build-debug/mila <source file path>

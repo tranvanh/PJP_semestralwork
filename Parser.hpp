@@ -38,7 +38,6 @@
 
 class Parser {
 public:
-//    Parser();
 
     Parser(const std::string &file_name);
 

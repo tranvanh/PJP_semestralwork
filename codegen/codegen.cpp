@@ -58,7 +58,6 @@ static Value *string_specifier_character;
 static Value *new_line_specifier;
 
 
-
 Value *ASTProgram::codegen() {
     // Printf and scanf declarations
     PointerType *ptr = PointerType::get(IntegerType::get(TheContext, 8), 0);
@@ -102,20 +101,6 @@ Value *ASTProgram::codegen() {
 // Does the magic
 std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
     // Create a new pass manager attached to it.
-    //	TheFPM = llvm::make_unique<legacy::FunctionPassManager>(TheModule.get());
-    /*
-    // Promote allocas to registers.
-    TheFPM->add(createPromoteMemoryToRegisterPass());
-    // Do simple "peephole" optimizations and bit-twiddling optzns.
-    TheFPM->add(createInstructionCombiningPass());
-    // Reassociate expressions.
-    TheFPM->add(createReassociatePass());
-    // Eliminate Common SubExpressions.
-    TheFPM->add(createGVNPass());
-    // Simplify the control flow graph (deleting unreachable blocks, etc).
-    TheFPM->add(createCFGSimplificationPass());
-
-    TheFPM->doInitialization();*/
 
     TheModule = std::make_unique<Module>("main_module", TheContext);
 
@@ -170,12 +155,9 @@ std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
     }
 
     legacy::PassManager pass;
-//    auto file_type = CGFT_ObjectFile;
     auto file_type = TargetMachine::CGFT_ObjectFile;
 
-    if (TheTargetMachine -> addPassesToEmitFile(pass, dest, file_type)) {
-//    if (TheTargetMachine->addPassesToEmitFile(pass, (raw_pwrite_stream &) outs(),
-//                                              (raw_pwrite_stream * )(&outs()), file_type)) {
+    if (TheTargetMachine->addPassesToEmitFile(pass, dest, file_type)) {
         errs() << "TheTargetMachine can't emit a file of this type";
         return nullptr;
     }
@@ -190,7 +172,6 @@ std::unique_ptr<Module> ASTProgram::runCodegen(const std::string &output_file) {
 
     return nullptr;
 }
-//-----------------_TEST
 
 Value *ASTBody::codegen() {
     for (auto &statement : m_Content)
@@ -198,6 +179,7 @@ Value *ASTBody::codegen() {
 
     return Constant::getNullValue(Type::getInt32Ty(TheContext));
 }
+
 Value *ASTNumber::codegen() {
     return ConstantInt::get(TheContext, APInt(32, m_Value, true));
 }
@@ -215,11 +197,12 @@ Type *ASTArray::codegen() {
     int size = (m_UpperIdx->m_Value) - (m_LowerIdx->m_Value) + 1;
     return ArrayType::get(elem_type, size);
 }
-static AllocaInst * CreateEntryBlockAlloca(Function *TheFunction, const std::string &VarName, Type * type)
-{
-    IRBuilder<> TmpB(&TheFunction -> getEntryBlock(), TheFunction -> getEntryBlock().begin());
 
-    auto init_value = ConstantInt::get(Type::getInt32Ty(TheContext), (type->isArrayTy() ? type->getArrayNumElements() : 0), false);
+static AllocaInst *CreateEntryBlockAlloca(Function *TheFunction, const std::string &VarName, Type *type) {
+    IRBuilder<> TmpB(&TheFunction->getEntryBlock(), TheFunction->getEntryBlock().begin());
+
+    auto init_value = ConstantInt::get(Type::getInt32Ty(TheContext),
+                                       (type->isArrayTy() ? type->getArrayNumElements() : 0), false);
     return TmpB.CreateAlloca(type, init_value, VarName.c_str());
 }
 
@@ -328,7 +311,6 @@ Function *ASTFunction::codegen() {
     // Save function m_Arguments so they can be used as local variables
     int idx = 0;
     for (auto &arg : function->args()) {
-        // TODO maybe use m_Name and type from m_Prototype
         // Create an alloca for arg
         AllocaInst *alloca = CreateEntryBlockAlloca(function, arg.getName(), arg.getType());
         // Store arg into the alloca.
@@ -341,19 +323,17 @@ Function *ASTFunction::codegen() {
     for (auto &var : m_LocalVariables) {
         auto type_value = var->m_Type->codegen();
         AllocaInst *alloca = CreateEntryBlockAlloca(function, var->m_Name, type_value);
-        // Builder.CreateStore(ConstantInt::get(TheContext, APInt(32, 0, true)), alloca);  // TODO not for arrays
         named_values[var->m_Name] = std::make_pair(alloca, var->m_Type);
     }
 
     // Return variable for functions
     if (m_Prototype->m_ReturnType) {
-        AllocaInst *alloca = CreateEntryBlockAlloca(function, m_Prototype->getName(), m_Prototype->m_ReturnType->codegen());
-        // Builder.CreateStore(ConstantInt::get(TheContext, APInt(32, 0, true)), alloca);  // TODO not for arrays
+        AllocaInst *alloca = CreateEntryBlockAlloca(function, m_Prototype->getName(),
+                                                    m_Prototype->m_ReturnType->codegen());
         named_values[m_Prototype->getName()] = std::make_pair(alloca, m_Prototype->m_ReturnType);;
     }
 
 
-    //Builder.SetInsertPoint(function_BB);
 
     auto body_value = m_Body->codegen();
     if (!body_value)
@@ -372,22 +352,20 @@ Function *ASTFunction::codegen() {
 
 
     assert(!verifyFunction(*function, &errs()));
-    //TheFPM -> run(*function);
 
-    // Unrecurse
     named_values = old_named_values;
 
     return function;
 }
-Value * ASTAssignOperator::codegen ()
-{
+
+Value *ASTAssignOperator::codegen() {
     // Find alloca address of left side
-    Value * alloca = m_Variable -> getAlloc();
-    if ( !alloca )
+    Value *alloca = m_Variable->getAlloc();
+    if (!alloca)
         return nullptr;
 
-    Value * new_value = m_Value -> codegen();
-    if ( !new_value )
+    Value *new_value = m_Value->codegen();
+    if (!new_value)
         return nullptr;
 
     Builder.CreateStore(new_value, alloca);
@@ -396,16 +374,15 @@ Value * ASTAssignOperator::codegen ()
 }
 
 
-Value * ASTBinaryOperator::codegen ()
-{
-    Value * left = m_LHS -> codegen();
-    Value * right = m_RHS -> codegen();
+Value *ASTBinaryOperator::codegen() {
+    Value *left = m_LHS->codegen();
+    Value *right = m_RHS->codegen();
 
-    if ( !left || !right )
+    if (!left || !right)
         return nullptr;
 
-    Value * bit_result;
-    switch ( m_Op ) {
+    Value *bit_result;
+    switch (m_Op) {
         case tok_plus:
             bit_result = Builder.CreateAdd(left, right, "add");
             break;
@@ -452,62 +429,61 @@ Value * ASTBinaryOperator::codegen ()
     return Builder.CreateIntCast(bit_result, Type::getInt32Ty(TheContext), true);
 }
 
-Value * ASTSingleVarReference::codegen ()
-{
-    if ( const_vars.find(m_Name) != const_vars.cend() )
+Value *ASTSingleVarReference::codegen() {
+    if (const_vars.find(m_Name) != const_vars.cend())
         return const_vars[m_Name];
 
     // Search for var
     TVarInfo info;
 
-    if ( named_values.find(m_Name) != named_values.end() )
+    if (named_values.find(m_Name) != named_values.end())
         info = named_values[m_Name];
-    else if ( global_vars.find(m_Name) != global_vars.end() )
+    else if (global_vars.find(m_Name) != global_vars.end())
         info = global_vars[m_Name];
     else
         throw "Using an undeclared variable";
 
     return Builder.CreateLoad(info.first, m_Name);
 }
+
 // Find variable address
-Value * ASTSingleVarReference::getAlloc()
-{
+Value *ASTSingleVarReference::getAlloc() {
     TVarInfo info;
-    if ( named_values.find(m_Name) != named_values.cend() )
+    if (named_values.find(m_Name) != named_values.cend())
         info = named_values[m_Name];
-    else if ( global_vars.find(m_Name) != global_vars.cend() )
+    else if (global_vars.find(m_Name) != global_vars.cend())
         info = global_vars[m_Name];
 
     return info.first;
 }
 
 // Get array elem value from stack
-Value * ASTArrayReference::codegen ()
-{
+Value *ASTArrayReference::codegen() {
     return Builder.CreateLoad(getAlloc());
 }
+
 // Find array elem address
-Value * ASTArrayReference::getAlloc()
-{
+Value *ASTArrayReference::getAlloc() {
     // Search for var
     TVarInfo info;
-    if ( named_values.find(m_Name) != named_values.cend() )
+    if (named_values.find(m_Name) != named_values.cend())
         info = named_values[m_Name];
-    else if ( global_vars.find(m_Name) != global_vars.cend() )
+    else if (global_vars.find(m_Name) != global_vars.cend())
         info = global_vars[m_Name];
     else
         throw "Undeclared array variable";
 
     // Calculating elem address
     std::vector<Value *> idx_list;
-    auto start_idx = std::dynamic_pointer_cast<ASTArray>(info.second) -> m_LowerIdx -> codegen();
-    auto idx = Builder.CreateSub(m_Index -> codegen(), start_idx);
+    auto start_idx = std::dynamic_pointer_cast<ASTArray>(info.second)->m_LowerIdx->codegen();
+    auto idx = Builder.CreateSub(m_Index->codegen(), start_idx);
 
     idx_list.push_back(ConstantInt::get(Type::getInt32Ty(TheContext), 0));
     idx_list.push_back(idx);
 
     return Builder.CreateGEP(info.first, idx_list);
 }
+
 Value *ASTIf::codegen() {
     Value *condition_value = m_Condition->codegen();
     if (!condition_value)
@@ -550,12 +526,6 @@ Value *ASTIf::codegen() {
 
     return Constant::getNullValue(Type::getInt32Ty(TheContext));
 
-
-/*	PHINode * phi_node = Builder.CreatePHI(Type::getInt32Ty(TheContext), 2, "iftmp");
-
-	phi_node -> addIncoming(then_value, then_BB);
-	phi_node -> addIncoming(else_value, else_BB);
-	return phi_node; */
 }
 
 Value *ASTFor::codegen() {

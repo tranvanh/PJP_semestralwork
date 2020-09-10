@@ -12,8 +12,19 @@
     </configurations>
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="README edit and minor fixes">
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+    <list default="true" id="f4f415f0-15ef-4a4d-9fd3-ad340f114eae" name="Default" comment="README edit">
+      <change afterPath="$PROJECT_DIR$/samples/cube.mila" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/samples/rectangle.mila" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeCache.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/CMakeDirectoryInformation.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile.cmake" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/Makefile2" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/intrinsics_gen.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/intrinsics_gen.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/build.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/flags.make" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/CMakeFiles/mila.dir/flags.make" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/Makefile" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/Makefile" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" beforeDir="false" afterPath="$PROJECT_DIR$/cmake-build-debug/compile_commands.json" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -100,7 +111,8 @@
       <workItem from="1591312600528" duration="575000" />
       <workItem from="1591313346204" duration="868000" />
       <workItem from="1591314356651" duration="185000" />
-      <workItem from="1591315798171" duration="25074000" />
+      <workItem from="1591315798171" duration="25233000" />
+      <workItem from="1599748928695" duration="2934000" />
     </task>
     <task id="LOCAL-00001" summary="AST implementation">
       <created>1591014419702</created>
@@ -326,7 +338,14 @@
       <option name="project" value="LOCAL" />
       <updated>1591464748013</updated>
     </task>
-    <option name="localTasksCounter" value="33" />
+    <task id="LOCAL-00033" summary="README edit">
+      <created>1591465040337</created>
+      <option name="number" value="00033" />
+      <option name="presentableId" value="LOCAL-00033" />
+      <option name="project" value="LOCAL" />
+      <updated>1591465040337</updated>
+    </task>
+    <option name="localTasksCounter" value="34" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -345,7 +364,6 @@
     <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
-    <MESSAGE value="parse expression implementation + number, string, parenthesis" />
     <MESSAGE value="implementation parse function call" />
     <MESSAGE value="implementation if statement" />
     <MESSAGE value="implementation all statements + assign" />
@@ -370,7 +388,8 @@
     <MESSAGE value="test script, fixed parser" />
     <MESSAGE value="README + test script" />
     <MESSAGE value="README edit and minor fixes" />
-    <option name="LAST_COMMIT_MESSAGE" value="README edit and minor fixes" />
+    <MESSAGE value="README edit" />
+    <option name="LAST_COMMIT_MESSAGE" value="README edit" />
   </component>
   <component name="WindowStateProjectService">
     <state x="417" y="186" key="#Build_All" timestamp="1591447624534">
@@ -381,10 +400,10 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="184" y="112" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1440.900@0.0.1440.900" timestamp="1591459219633" />
-    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1591453767722">
+    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser" timestamp="1599761066931">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1591453767722" />
+    <state x="464" y="259" key="#com.intellij.fileTypes.FileTypeChooser/0.0.1440.900@0.0.1440.900" timestamp="1599761066931" />
     <state x="507" y="162" key="#com.intellij.ide.macro.MacrosDialog" timestamp="1591376245697">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
@@ -393,50 +412,50 @@
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="458" y="204" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1440.900@0.0.1440.900" timestamp="1591462643954" />
-    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591464747797">
+    <state x="294" y="25" key="CommitChangelistDialog2" timestamp="1591465040169">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591464747797" />
-    <state width="1398" height="316" key="GridCell.Tab.0.bottom" timestamp="1591462284788">
+    <state x="294" y="25" key="CommitChangelistDialog2/0.0.1440.900@0.0.1440.900" timestamp="1591465040169" />
+    <state width="1398" height="316" key="GridCell.Tab.0.bottom" timestamp="1591467523398">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591462284788" />
-    <state width="1398" height="316" key="GridCell.Tab.0.center" timestamp="1591462284786">
+    <state width="1398" height="316" key="GridCell.Tab.0.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591467523398" />
+    <state width="1398" height="316" key="GridCell.Tab.0.center" timestamp="1591467523395">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591462284786" />
-    <state width="1398" height="316" key="GridCell.Tab.0.left" timestamp="1591462284761">
+    <state width="1398" height="316" key="GridCell.Tab.0.center/0.0.1440.900@0.0.1440.900" timestamp="1591467523395" />
+    <state width="1398" height="316" key="GridCell.Tab.0.left" timestamp="1591467523394">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591462284761" />
-    <state width="1398" height="316" key="GridCell.Tab.0.right" timestamp="1591462284787">
+    <state width="1398" height="316" key="GridCell.Tab.0.left/0.0.1440.900@0.0.1440.900" timestamp="1591467523394" />
+    <state width="1398" height="316" key="GridCell.Tab.0.right" timestamp="1591467523397">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591462284787" />
-    <state width="1398" height="316" key="GridCell.Tab.1.bottom" timestamp="1591462284792">
+    <state width="1398" height="316" key="GridCell.Tab.0.right/0.0.1440.900@0.0.1440.900" timestamp="1591467523397" />
+    <state width="1398" height="316" key="GridCell.Tab.1.bottom" timestamp="1591467523403">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591462284792" />
-    <state width="1398" height="316" key="GridCell.Tab.1.center" timestamp="1591462284790">
+    <state width="1398" height="316" key="GridCell.Tab.1.bottom/0.0.1440.900@0.0.1440.900" timestamp="1591467523403" />
+    <state width="1398" height="316" key="GridCell.Tab.1.center" timestamp="1591467523401">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1591462284790" />
-    <state width="1398" height="316" key="GridCell.Tab.1.left" timestamp="1591462284789">
+    <state width="1398" height="316" key="GridCell.Tab.1.center/0.0.1440.900@0.0.1440.900" timestamp="1591467523401" />
+    <state width="1398" height="316" key="GridCell.Tab.1.left" timestamp="1591467523399">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1591462284789" />
-    <state width="1398" height="316" key="GridCell.Tab.1.right" timestamp="1591462284791">
+    <state width="1398" height="316" key="GridCell.Tab.1.left/0.0.1440.900@0.0.1440.900" timestamp="1591467523399" />
+    <state width="1398" height="316" key="GridCell.Tab.1.right" timestamp="1591467523402">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state width="1398" height="316" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1591462284791" />
+    <state width="1398" height="316" key="GridCell.Tab.1.right/0.0.1440.900@0.0.1440.900" timestamp="1591467523402" />
     <state x="229" y="89" key="SettingsEditor" timestamp="1591283172987">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
     <state x="229" y="89" key="SettingsEditor/0.0.1440.900@0.0.1440.900" timestamp="1591283172987" />
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591465032064">
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2" timestamp="1591465042811">
       <screen x="0" y="0" width="1440" height="900" />
     </state>
-    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591465032064" />
+    <state x="320" y="190" key="Vcs.Push.Dialog.v2/0.0.1440.900@0.0.1440.900" timestamp="1591465042811" />
     <state x="421" y="82" width="598" height="735" key="find.popup" timestamp="1591380386696">
       <screen x="0" y="0" width="1440" height="900" />
     </state>

@@ -1,0 +1,60 @@
+program rectangle;
+
+
+var a,b:integer;
+var countA:integer;
+var countB:integer;
+var mezera:integer;
+var obsah:integer;
+
+begin
+	writeln('zadejte rozmery obdelniku');
+	writeln('strana A?');
+	readln(a);
+	writeln('strana B?');
+	readln(b);
+	obsah:=a * b;
+
+	countA:=a;
+	while ( countA > 0 ) do begin
+		write('*');
+		countA:=countA -1;
+	end;
+
+	writeln();
+
+	countB:=b -1;
+	while (countB > 1) do begin
+		write('*');
+		mezera:=a -2;
+		while mezera > 0 do begin
+			write(' ');
+			mezera:=mezera -1;
+		end;
+
+		if a=1 then begin
+			countB:=countB -1;
+			writeln();
+		end else
+			writeln('*');
+
+		countB:=countB -1;
+	end;
+
+ 	if b>1 then begin
+		countA:=a;
+		while ( countA > 0 ) do	begin
+			write('*');
+			countA:=countA -1;
+		end
+		writeln();
+		write('obsah se rovna ');
+		writeln(obsah);
+ 	end	else begin
+ 		writeln();
+		write('obsah se rovna ');
+		writeln(obsah);
+ 	end;
+
+end.
+

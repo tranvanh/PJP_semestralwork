@@ -1,0 +1,17 @@
+program cube;
+
+#Compute cube volume and surface
+
+
+var a, b, c : integer;
+begin
+	readln(a);
+	readln(b);
+	readln(c);
+
+	write('Cube volume is: ');
+	writeln(a * b * c);
+
+	write('Cube surface is: ');
+	writeln(2 * (a * b + b * c + c * a));
+end.

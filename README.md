@@ -31,7 +31,5 @@ all shell executable files will be saved in "./samples" directory
 
 **Compile single file**
 ```
-./cmake-build-debug/mila <source file path>
-clang++ output.o -o <shell executable name>
-./<shell executable name>
+bash test_single.sh <filename>
 ```
